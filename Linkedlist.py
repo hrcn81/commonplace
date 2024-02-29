@@ -137,7 +137,7 @@ class LinkedList:
 
 ll1 = LinkedList()
 
-print('Original List:')
+print('Original Elements:')
 [ll1.add( i * 10 ) for i in range(11,21)]
 ll1.print_list()
 
@@ -161,7 +161,7 @@ print('\nDeleting first element')
 ll1.delete_first()
 ll1.print_list()
 
-print('\nAdding some elements in the Original list to performe other operations.')
+print('\nAdding some elements in the Original Elements to perform other operations.')
 [ll1.add( i * 5 ) for i in range(21,36)]
 
 ll1.print_list()
