@@ -123,38 +123,60 @@ class LinkedList:
             temp = temp.next
         return count
 
-    def print_list(self):
+    def print_list ( self ):
         temp = self.head
         while temp is not None:
-            print(temp.elem, end=' ----> ')
+            if temp.next is not None:
+                print( temp.elem, end = ' ---> ' )
+            else:
+                print( temp.elem, end = ' ' )
             temp = temp.next
         print()
 
 
+
 ll1 = LinkedList()
 
+print('Original List:')
 [ll1.add( i * 10 ) for i in range(11,21)]
 ll1.print_list()
 
+print('\nInserting 88 at First(HEAD).')
 ll1.insert_first(88)
 ll1.print_list()
 
+print(f'\nRemoving Last element.')
 ll1.remove_last()
 ll1.print_list()
 
+print('\nInserting element at the middle(after 130 adding 800).')
 ll1.middle_insert(130,800)
 ll1.print_list()
 
+print('\nDeleting element(deleting 130).')
 ll1.delete(130)
 ll1.print_list()
 
+print('\nDeleting first element')
 ll1.delete_first()
 ll1.print_list()
+
+print('\nAdding some elements in the Original list to performe other operations.')
 [ll1.add( i * 5 ) for i in range(21,36)]
-ll1.search(120)
+
 ll1.print_list()
-print(ll1.sorting())
+print('Searching for element(120).')
+print(ll1.search(120))
+print('Searching for element(1000).')
+print(ll1.search(1000))
+
+print('\nSorting elements in ascending form.')
 ll1.ascending_sort()
 ll1.print_list()
+
+print('\nSorting elements in descending form.')
 ll1.descending_sort()
 ll1.print_list()
+
+print('\nCounting total elements.')
+print(ll1.count())
