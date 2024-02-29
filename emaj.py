@@ -8337,20 +8337,54 @@ print(dct)
 
 
 
+# # Adding and updating the key-value pairs:
+# dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
+# print(dct)
+
+# dct[600] = 'Yuval'		# {1: 'Mayank', 2: 'Miral', 3: 'Martin', 4: 'Melech', 600: 'Yuval'}
+# print(dct)
+
+# dct[0] = 'Morkal'			# {1: 'Mayank', 2: 'Miral', 3: 'Martin', 4: 'Melech', 0: 'Morkal'}
+# print(dct)
+
+# del dct[1]					# {2: 'Miral', 3: 'Martin', 4: 'Melech'}
+# print(dct)
 
 
 
+# # Cleaning the dictionary:
+# dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
+# print(dct)
 
+# print(dct.clear())			# None
+# print(dct)					# {}
 
+# print(dct.keys())				# dict_keys([1, 2, 3, 4])
 
+# print(dct.values())				# dict_values(['Mayank', 'Miral', 'Martin', 'Melech'])
 
+# for k in dct.keys():
+# 	print(k,dct[k])
 
+# print(dct.items())				# dict_items([(1, 'Mayank'), (2, 'Miral'), (3, 'Martin'), (4, 'Melech')])
+# for i in dct.items():
+# 	print(i[0],i[1])
 
+# for i in dct.items():				# (1, 'Mayank').......
+# 	print(i)
+#
+# for i,j in dct.items():				# 1 Mayank........
+# 	print(i,j)
 
+# # Checking if key is present:
+# print('Checking if key is present:')
+# dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
+# print(dct)
+#
+# # print(1 in dct)						# True
+# # print(0 in dct)						# False
 
-
-
-
-
-
+# # Some other operations:
+# dict_1.update(dict_2)
+# dict_1 + dict_2 						# Error
 
