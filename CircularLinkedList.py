@@ -2,12 +2,12 @@
 Circular Linked List:
 '''
 class Node:
-    def _init_(self, elem):
+    def __init__(self, elem):
         self.elem = elem
         self.next = None
 
 class CircularLinkedList:
-    def _init_(self, head=None, tail=None):
+    def __init__(self, head=None, tail=None):
         self.head = head
         self.tail = tail
 
