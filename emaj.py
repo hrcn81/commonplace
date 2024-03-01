@@ -8388,3 +8388,39 @@ print(dct)
 # dict_1.update(dict_2)
 # dict_1 + dict_2 						# Error
 
+
+# # Checking if key is present:
+# print('Checking if key is present:')
+# dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
+# print(dct)
+#
+# # print(1 in dct)						# True
+# # print(0 in dct)						# False
+
+# # Some other operations:
+# dict_1.update(dict_2)
+# dict_1 + dict_2 						# Error
+
+
+# A = "geeksforgeeks"
+# B = "geeksquiz"
+# print(A.split())
+# print(len(A))
+# la = []
+# for i in A.split():
+# 	for j in B.split():
+# 		if j not in A.split():
+# 			print(la.append(j))
+
+
+
+# A = "efghijkl"
+# B = "abcdefgh"
+#
+# set_A = set(A)
+# set_B = set(B)
+#
+# result_set = (set_A - set_B) | (set_B - set_A)
+# result = ''.join(sorted(result_set))
+#
+# print(result)
