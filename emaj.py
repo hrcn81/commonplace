@@ -8531,3 +8531,32 @@ print(dct)
 # l.tail = n3
 # l.tail.next = l.head
 # l.display()
+
+
+'''Dictionary Comprehension'''
+# dct = {i:i**2 for i in range(1,6)}					# {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+# print(dct)
+
+# print('-'*30)
+
+
+# dct1 = {i:i**2 for i in range(1,11) if i % 2 == 0}
+# print(dct1)											# {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
+
+# lst1 = ['apple','banana','mango','orange']
+# print(lst1)
+
+# for i in range(len(lst1)):
+# 	print(lst1[i],{i:lst1[i]})
+
+# dct1 = {item: len(item) for item in lst1}				# {'apple': 5, 'banana': 6, 'mango': 5, 'orange': 6}
+# print(dct1)
+#
+# print({len(i) : i for i in lst1})
+
+# print({i[::-1] : i for i in lst1})					# {'elppa': 'apple', 'ananab': 'banana', 'ognam': 'mango', 'egnaro': 'orange'}
+
+# lst2 = lst1[::-1]
+# print(lst2)											# ['orange', 'mango', 'banana', 'apple']
+# print({i[::-1]:i for i in lst2})						# {'egnaro': 'orange', 'ognam': 'mango', 'ananab': 'banana', 'elppa': 'apple'}
+
