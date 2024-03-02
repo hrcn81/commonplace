@@ -8424,3 +8424,110 @@ print(dct)
 # result = ''.join(sorted(result_set))
 #
 # print(result)
+
+
+
+# dct = {1 : {'Name':'Mayank','Phone': 9512691345},
+#         2 : {'Name':'Melech','Phone': 69792984288},
+#         3 : {'Name':'Miral','Phone': 9913328982},
+#         4 : {'Name':'Miral','Phone': 9879705541}}
+# print(dct)
+# print('-'*50*2)
+# print(dct.items())              # dict_items([(1, {'Name': 'Mayank', 'Phone': 9512691345}),......
+# print(dct.values())             # dict_values([{'Name': 'Mayank', 'Phone': 9512691345},......
+# print(dct.keys())               # dict_keys([1, 2, 3, 4])
+
+# # Accessing Elements
+# print(dct[1])               # {'Name': 'Mayank', 'Phone': 9512691345}
+# print(dct[1]['Name'])       # Mayank
+#
+# print(len(dct))             # 4
+
+# # Updating
+# print(dct[3])               # {'Name': 'Miral', 'Phone': 9913328982}
+# dct[3]['Name'] = 'Aston'
+# print(dct[3])               # {'Name': 'Aston', 'Phone': 9913328982}
+
+# # Adding
+# dct[5] = {'Name':'Viral','Phone':9876543210}
+# print(dct)                    # This will added in the last of the dictionary
+# # print(len(dct))               # 5
+
+# # Deleting
+# print(dct[4])                  # {'Name': 'Miral', 'Phone': 9879705541}
+# del dct[4]
+# print(dct[4])                  # Error
+
+# # Going through the Data
+# for i in dct.keys():
+#     print(i,dct[i]['Name'],end = ' ')                 # 1 Mayank 2 Melech 3 Miral 4 Miral
+#
+# for i in dct.keys():
+#     print(i,dct[i]['Phone'],end = ' ')                # 1 Mayank 2 Melech 3 Miral 4 Miral 1 9512691345 2 69792984288 3 9913328982 4 9879705541
+# for i in dct.keys():
+#     print(i,dct[i]['Name'],dct[i]['Phone'],end = ' ')   # 1 Mayank 9512691345 2 Melech 69792984288 3 Miral 9913328982 4 Miral 9879705541
+# print(1 in dct)                     # True
+# print(66 in dct)                    # False
+
+# # Going to level Upper with marks
+# # Taking new dct:
+# data = {1 : {'Name':'Mayank','Phone': 9512691345,'Marks':{'Hindi':45,'Math':46,'Science':48}},
+#         2 : {'Name':'Melech','Phone': 69792984288,'Marks':{'Hindi':40,'Math':30,'Science':31}},
+#         3 : {'Name':'Miral','Phone': 9913328982,'Marks':{'Hindi':39,'Math':40,'Science':41}},
+#         4 : {'Name':'Miral','Phone': 9879705541,'Marks':{'Hindi':12,'Math':41,'Science':37}},}
+# print(data)
+# print('-'*50*2)
+
+# for i in data.keys():
+#     print(i,data[i]['Name'],data[i]['Marks'])
+
+# for key, value in data.items():
+#     print(key, value.get('Name', 'Name not available'))
+#     if 'Marks' in value:
+#         for subject, marks in value['Marks'].items():
+#             print(f"   {subject}: {marks}")
+
+
+
+'''Circular Linked List'''
+# class Node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+
+# class CLL:
+# 	def __init__( self ):
+# 		self.head = None
+# 		self.tail = None
+# 	def display( self ):
+# 		if self.head is None:
+# 			print("Empty CLL")
+# 		else:
+# 			temp = self.head
+# 			print(temp.data,'--->',end = ' ')
+# 			while temp.next != self.head:
+# 				temp = temp.next
+# 				print(temp.data,'--->',end = ' ')
+# 			print(temp.next.data)
+
+# l = CLL()
+
+
+# n1 = Node(10)
+# l.head = n1
+# l.tail = n1
+# l.tail.next = l.head
+# l.display()
+# print()
+
+# n2 = Node(20)
+# l.tail.next = n2
+# l.tail = n2
+# l.tail.next = l.head
+# l.display()
+
+# n3 = Node(30)
+# l.tail.next = n3
+# l.tail = n3
+# l.tail.next = l.head
+# l.display()
