@@ -8,27 +8,27 @@ Unique Values
 '''
 set1 = {1,2,3,4,5,'a','b','c','d','e'}			# len = 10
 print(set1)
-# print(type(set1))
+print(type(set1))
 print('-'*30)
 
-# Adding
+# # Adding
 set1.add(6)
 print(set1)
 
-# Pop
+# # Pop
 popped_s1 = set1.pop()			# For pop() use another variable
 print(popped_s1)
 print(set1)
 
-# Remove
+# # Remove
 set1.discard('b')
 print(set1)
 
-# Iterating
+# # Iterating
 for i in set1:
 	print(i)
 
-# Checking Values in set1:
+# # Checking Values in set1:
 print(2 in set1)				# True
 print('b' in set1)				# True
 print('xx' in set1)				# False
