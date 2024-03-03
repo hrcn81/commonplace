@@ -8717,3 +8717,38 @@ Can keep duplicate values
 # tupmul = (1,11,2,22)
 # print(tupmul * 2)				# Duplicates the tuple --> (1, 11, 2, 22, 1, 11, 2, 22)
 
+
+
+
+'''
+Fill the sequence
+
+Example 1:
+Input:
+numbers = ( 1 ,5, 9, 13, 17 )
+Output: 
+1 5 9 13 17 21 25 29
+Explanation: It's an increasing sequence by 4. So, the next three numbers are 17+4= 21,  21+4=25, 25+4=29.
+
+Example 2:
+Input:
+numbers = (3, 1 ,-1, -3 ,-5 ,-7 )
+Output:
+3  1  -1  -3  -5  -7  -9  -11  -13
+Explanation:  It's an decreasing sequence by 2.  So, the next three numbers are  -7-2=-9, -9-2=11, -11-2=-13
+'''
+
+# def sequence(numbers):
+# 	num = list(numbers)
+# 	diff = num[1] - num[0]
+# 	size = len(numbers)
+# 	emptylist = []
+# 	x = num[0]
+# 	for i in range(size + 3):
+# 		emptylist.append(x)
+# 		x += diff
+# 	return tuple(emptylist)
+# 
+# numbers = (5, 6, 8, 7, 42)
+# print(sequence(numbers))
+
