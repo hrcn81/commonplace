@@ -8752,3 +8752,18 @@ Explanation:  It's an decreasing sequence by 2.  So, the next three numbers are 
 # numbers = (5, 6, 8, 7, 42)
 # print(sequence(numbers))
 
+
+
+'''
+FUNCTIONS
+'''
+
+# def greet():				# greet ---> name of the function
+# 	print("Hey! Mayank. Your function is working")
+# greet()						# Hey! Mayank. Your function is working
+
+# for i in range(1,100 + 1):
+	# print(i,greet())			# Gives None
+	# print(i,end = ' ')
+	# greet()					# Won't give None
+
