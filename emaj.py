@@ -8756,14 +8756,20 @@ Explanation:  It's an decreasing sequence by 2.  So, the next three numbers are 
 
 '''
 FUNCTIONS
-'''
 
-# def greet():				# greet ---> name of the function
-# 	print("Hey! Mayank. Your function is working")
-# greet()						# Hey! Mayank. Your function is working
+'def' : Keyword used to define the function
+'''
+# i = 0
+# def greet():						# greet ---> name of the function
+# 	global i
+# 	i += 1
+# 	print(i,"Hey! Mayank. Your function is working")
+# greet()								# Hey! Mayank. Your function is working
 
 # for i in range(1,100 + 1):
-	# print(i,greet())			# Gives None
+	# print(i,greet())				# Gives None
 	# print(i,end = ' ')
-	# greet()					# Won't give None
+	# greet()						# Won't give None
+
+# [greet() for i in range(10)]		# runs greet function 10 times
 
