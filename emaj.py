@@ -8560,3 +8560,21 @@ print(dct)
 # print(lst2)											# ['orange', 'mango', 'banana', 'apple']
 # print({i[::-1]:i for i in lst2})						# {'egnaro': 'orange', 'ognam': 'mango', 'ananab': 'banana', 'elppa': 'apple'}
 
+# dct2 = {'Num_'+str(i) : i for i in range(1,100 + 1)}
+# print(dct2)
+
+# dct2 = {'Num_'+str(i) : i for i in range(1,100 + 1) if i % 7 == 0}
+# print(dct2)
+# print(len(dct2))
+
+
+# l1 = ['a','b','c','d','e']
+# l2 = [1,2,3,4,5]
+#
+# dctl12 = { l2[ i ] : l1[ i ] for i in range( len(l1) ) }
+# print(dctl12)
+
+
+# matrix = [[1,2,3],[4,5,6],[7,8,9]]
+# final_dct = {(i+1,j+1) : matrix[i][j] for i in range(3) for j in range(3)}
+# print(final_dct)
