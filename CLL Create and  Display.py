@@ -1,4 +1,5 @@
 '''Circular Linked List'''
+
 class Node:
 	def __init__( self,data ):
 		self.data = data
@@ -34,9 +35,25 @@ l.tail.next = n2
 l.tail = n2
 l.tail.next = l.head
 l.display()
+print()
 
 n3 = Node(30)
 l.tail.next = n3
 l.tail = n3
 l.tail.next = l.head
 l.display()
+print()
+
+n4 = Node(40)
+l.tail.next = n4
+l.tail = n4
+l.tail.next = l.head
+l.display()
+print()
+
+n5 = Node(50)
+l.tail.next = n5
+l.tail = n5
+l.tail.next = n1
+l.display()
+
