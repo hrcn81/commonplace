@@ -9014,7 +9014,7 @@ In above all functions have same name 'updating()'.So, the last updated function
 # 	# khaali.append(str(num1)[i])
 # 	if str(num1)[i] in khaali:
 # 		khaali.append( str( num1 )[ i ] )
-# 		print('Yes')
+# 		print('Yes!','Repeated Number: ',str( num1 )[ i ])
 # 	else:
 # 		khaali.append( str( num1 )[ i ] )
 # 		# pass
