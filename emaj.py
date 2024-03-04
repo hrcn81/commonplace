@@ -8973,3 +8973,29 @@ In above all functions have same name 'updating()'.So, the last updated function
 # def final(list1,list2):
 # 	return square_list(list1) + cube_list(list2)		# adding both lists using above function
 # print(final(l1,l2))				# [1, 4, 9, 16, 25, 1, 8, 27, 64, 125]
+
+
+# list1 = [1,2,3,4,5]
+# def one(list1):
+# 	return [i*2 for i in list1]
+# def two(list1):
+# 	return [i*3 for i in list1]
+# def last(list1):
+# 	return f"{one( list1 ) , 'X X' , two( list1 )}"
+# print(last(list1))
+
+
+
+
+# # Program for repeating digit:
+# l1 = []
+# while True:
+# 	take1 = int( input( 'Enter Number: ' ) )
+# 	# l1.append(take1)
+# 	if take1 in l1:
+# 		l1.append( take1 )
+# 		print('Yes')
+# 	else:
+# 		l1.append(take1)
+# 	print(l1)
+
