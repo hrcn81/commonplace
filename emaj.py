@@ -8999,3 +8999,45 @@ In above all functions have same name 'updating()'.So, the last updated function
 # 		l1.append(take1)
 # 	print(l1)
 
+
+
+# # Program to check repeating digit:
+# num1 = int(input('Enter Numebr: '))
+# # x = '2'
+# # y = '2'
+# # print(x == y)
+# lambai = len(str(num1))
+# # print(lambai)
+# # print(str(num1)[2])
+# khaali = []
+# for i in range(lambai):
+# 	# khaali.append(str(num1)[i])
+# 	if str(num1)[i] in khaali:
+# 		khaali.append( str( num1 )[ i ] )
+# 		print('Yes')
+# 	else:
+# 		khaali.append( str( num1 )[ i ] )
+# 		# pass
+# # print(khaali)
+# number = int(''.join(khaali))
+# print('Output Number:', number)
+
+
+
+# # Same as above by (Chat GPT 3.5)
+# num1 = int(input('Enter Number: '))
+# lambai = len(str(num1))
+# khaali = []
+# 
+# for i in range(lambai):
+#     if str(num1)[i] not in khaali:
+#         khaali.append(str(num1)[i])
+#     else:
+#         print('Yes')
+# 
+# # Convert the list of unique digits back to a number
+# result_number = int(''.join(khaali))
+# 
+# print('Output Number:', result_number)
+
+
