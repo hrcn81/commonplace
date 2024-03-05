@@ -8170,7 +8170,18 @@ Circular Linked List:
 #                 break
 #         print()
 #
-#     def insert(self, elem):
+#     def insert_at_first(self, elem):
+#         new_node = Node(elem)
+#         if not self.head:
+#             self.head = new_node
+#             self.head.next = self.head
+#             self.tail = self.head
+#         else:
+#             new_node.next = self.head
+#             self.head = new_node
+#             self.tail.next = self.head
+#
+#     def insert_at_last(self, elem):
 #         new_node = Node(elem)
 #         if not self.head:
 #             self.head = new_node
@@ -8199,7 +8210,6 @@ Circular Linked List:
 #         temp.next = temp.next.next
 #         return val
 #
-#
 #     def print_list(self):
 #         temp = self.head
 #         while temp is not None:
@@ -8215,7 +8225,7 @@ Circular Linked List:
 #
 # cl1 = CircularLinkedList()
 #
-# [cl1.insert(i*10) for i in range(1,11)]
+# [cl1.insert_at_first(i*10) for i in range(1,11)]
 # cl1.print_list()
 #
 # cl1.delete(30)
@@ -8224,7 +8234,10 @@ Circular Linked List:
 # cl1.delete(20)
 # cl1.print_list()
 #
-# cl1.insert(110)
+# cl1.insert_at_last(9000)
+# cl1.print_list()
+#
+# cl1.insert_at_first(6000)
 # cl1.print_list()
 
 
@@ -8307,8 +8320,8 @@ Problem Statement - Count Occurrences of each unique word in a Sentence
 
 
 '''Dictionary'''
-dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
-print(dct)
+# dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
+# print(dct)
 # print(type(dct))
 
 # print('Changing Martin to Aston-Martin')
@@ -8320,6 +8333,8 @@ print(dct)
 # print(dct)
 
 # # Accesing Dictionary:
+# dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
+# print(dct)
 # print('\nAccesing Dictionary:')
 # print(dct)
 
@@ -8336,7 +8351,6 @@ print(dct)
 # print(dct.get(1))			# Mayank
 
 
-
 # # Adding and updating the key-value pairs:
 # dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
 # print(dct)
@@ -8349,7 +8363,6 @@ print(dct)
 
 # del dct[1]					# {2: 'Miral', 3: 'Martin', 4: 'Melech'}
 # print(dct)
-
 
 
 # # Cleaning the dictionary:
@@ -8389,19 +8402,6 @@ print(dct)
 # dict_1 + dict_2 						# Error
 
 
-# # Checking if key is present:
-# print('Checking if key is present:')
-# dct = {1 : 'Mayank',2:'Miral',3:'Martin',4:'Melech'}
-# print(dct)
-#
-# # print(1 in dct)						# True
-# # print(0 in dct)						# False
-
-# # Some other operations:
-# dict_1.update(dict_2)
-# dict_1 + dict_2 						# Error
-
-
 # A = "geeksforgeeks"
 # B = "geeksquiz"
 # print(A.split())
@@ -8424,77 +8424,77 @@ print(dct)
 # result = ''.join(sorted(result_set))
 #
 # print(result)
-
-
-
-# dct = {1 : {'Name':'Mayank','Phone': 9512691345},
-#         2 : {'Name':'Melech','Phone': 69792984288},
-#         3 : {'Name':'Miral','Phone': 9913328982},
-#         4 : {'Name':'Miral','Phone': 9879705541}}
-# print(dct)
-# print('-'*50*2)
-# print(dct.items())              # dict_items([(1, {'Name': 'Mayank', 'Phone': 9512691345}),......
-# print(dct.values())             # dict_values([{'Name': 'Mayank', 'Phone': 9512691345},......
-# print(dct.keys())               # dict_keys([1, 2, 3, 4])
-
-# # Accessing Elements
-# print(dct[1])               # {'Name': 'Mayank', 'Phone': 9512691345}
-# print(dct[1]['Name'])       # Mayank
 #
-# print(len(dct))             # 4
-
-# # Updating
-# print(dct[3])               # {'Name': 'Miral', 'Phone': 9913328982}
-# dct[3]['Name'] = 'Aston'
-# print(dct[3])               # {'Name': 'Aston', 'Phone': 9913328982}
-
-# # Adding
-# dct[5] = {'Name':'Viral','Phone':9876543210}
-# print(dct)                    # This will added in the last of the dictionary
-# # print(len(dct))               # 5
-
-# # Deleting
-# print(dct[4])                  # {'Name': 'Miral', 'Phone': 9879705541}
-# del dct[4]
-# print(dct[4])                  # Error
-
-# # Going through the Data
-# for i in dct.keys():
-#     print(i,dct[i]['Name'],end = ' ')                 # 1 Mayank 2 Melech 3 Miral 4 Miral
 #
-# for i in dct.keys():
-#     print(i,dct[i]['Phone'],end = ' ')                # 1 Mayank 2 Melech 3 Miral 4 Miral 1 9512691345 2 69792984288 3 9913328982 4 9879705541
-# for i in dct.keys():
-#     print(i,dct[i]['Name'],dct[i]['Phone'],end = ' ')   # 1 Mayank 9512691345 2 Melech 69792984288 3 Miral 9913328982 4 Miral 9879705541
-# print(1 in dct)                     # True
-# print(66 in dct)                    # False
-
-# # Going to level Upper with marks
-# # Taking new dct:
-# data = {1 : {'Name':'Mayank','Phone': 9512691345,'Marks':{'Hindi':45,'Math':46,'Science':48}},
-#         2 : {'Name':'Melech','Phone': 69792984288,'Marks':{'Hindi':40,'Math':30,'Science':31}},
-#         3 : {'Name':'Miral','Phone': 9913328982,'Marks':{'Hindi':39,'Math':40,'Science':41}},
-#         4 : {'Name':'Miral','Phone': 9879705541,'Marks':{'Hindi':12,'Math':41,'Science':37}},}
-# print(data)
-# print('-'*50*2)
-
-# for i in data.keys():
-#     print(i,data[i]['Name'],data[i]['Marks'])
-
-# for key, value in data.items():
-#     print(key, value.get('Name', 'Name not available'))
-#     if 'Marks' in value:
-#         for subject, marks in value['Marks'].items():
-#             print(f"   {subject}: {marks}")
-
-
-
-'''Circular Linked List'''
+#
+# # dct = {1 : {'Name':'Mayank','Phone': 9512691345},
+# #         2 : {'Name':'Melech','Phone': 69792984288},
+# #         3 : {'Name':'Miral','Phone': 9913328982},
+# #         4 : {'Name':'Miral','Phone': 9879705541}}
+# # print(dct)
+# # print('-'*50*2)
+# # print(dct.items())              # dict_items([(1, {'Name': 'Mayank', 'Phone': 9512691345}),......
+# # print(dct.values())             # dict_values([{'Name': 'Mayank', 'Phone': 9512691345},......
+# # print(dct.keys())               # dict_keys([1, 2, 3, 4])
+#
+# # # Accessing Elements
+# # print(dct[1])               # {'Name': 'Mayank', 'Phone': 9512691345}
+# # print(dct[1]['Name'])       # Mayank
+# #
+# # print(len(dct))             # 4
+#
+# # # Updating
+# # print(dct[3])               # {'Name': 'Miral', 'Phone': 9913328982}
+# # dct[3]['Name'] = 'Aston'
+# # print(dct[3])               # {'Name': 'Aston', 'Phone': 9913328982}
+#
+# # # Adding
+# # dct[5] = {'Name':'Viral','Phone':9876543210}
+# # print(dct)                    # This will added in the last of the dictionary
+# # # print(len(dct))               # 5
+#
+# # # Deleting
+# # print(dct[4])                  # {'Name': 'Miral', 'Phone': 9879705541}
+# # del dct[4]
+# # print(dct[4])                  # Error
+#
+# # # Going through the Data
+# # for i in dct.keys():
+# #     print(i,dct[i]['Name'],end = ' ')                 # 1 Mayank 2 Melech 3 Miral 4 Miral
+# #
+# # for i in dct.keys():
+# #     print(i,dct[i]['Phone'],end = ' ')                # 1 Mayank 2 Melech 3 Miral 4 Miral 1 9512691345 2 69792984288 3 9913328982 4 9879705541
+# # for i in dct.keys():
+# #     print(i,dct[i]['Name'],dct[i]['Phone'],end = ' ')   # 1 Mayank 9512691345 2 Melech 69792984288 3 Miral 9913328982 4 Miral 9879705541
+# # print(1 in dct)                     # True
+# # print(66 in dct)                    # False
+#
+# # # Going to level Upper with marks
+# # # Taking new dct:
+# # data = {1 : {'Name':'Mayank','Phone': 9512691345,'Marks':{'Hindi':45,'Math':46,'Science':48}},
+# #         2 : {'Name':'Melech','Phone': 69792984288,'Marks':{'Hindi':40,'Math':30,'Science':31}},
+# #         3 : {'Name':'Miral','Phone': 9913328982,'Marks':{'Hindi':39,'Math':40,'Science':41}},
+# #         4 : {'Name':'Miral','Phone': 9879705541,'Marks':{'Hindi':12,'Math':41,'Science':37}},}
+# # print(data)
+# # print('-'*50*2)
+#
+# # for i in data.keys():
+# #     print(i,data[i]['Name'],data[i]['Marks'])
+#
+# # for key, value in data.items():
+# #     print(key, value.get('Name', 'Name not available'))
+# #     if 'Marks' in value:
+# #         for subject, marks in value['Marks'].items():
+# #             print(f"   {subject}: {marks}")
+#
+#
+#
+# '''Circular Linked List'''
 # class Node:
 # 	def __init__( self,data ):
 # 		self.data = data
 # 		self.next = None
-
+#
 # class CLL:
 # 	def __init__( self ):
 # 		self.head = None
@@ -8509,23 +8509,23 @@ print(dct)
 # 				temp = temp.next
 # 				print(temp.data,'--->',end = ' ')
 # 			print(temp.next.data)
-
+#
 # l = CLL()
-
-
+#
+#
 # n1 = Node(10)
 # l.head = n1
 # l.tail = n1
 # l.tail.next = l.head
 # l.display()
 # print()
-
+#
 # n2 = Node(20)
 # l.tail.next = n2
 # l.tail = n2
 # l.tail.next = l.head
 # l.display()
-
+#
 # n3 = Node(30)
 # l.tail.next = n3
 # l.tail = n3
@@ -8661,6 +8661,7 @@ Unique Values
 # print('Cleared')
 
 
+
 '''
 TUPLE:
 
@@ -8669,16 +8670,15 @@ Immutable
 Can be ordered
 Can keep duplicate values
 '''
-
 # tup1 = (1,2,3,4,5,5,6)					# len = 7
 # print(tup1)
 # print(len(tup1))
-
+#
 # # # Slicing
 # print('\nSlicing')
 # print(tup1[1:4])				# (2, 3, 4)
 # print(tup1[::-1])				# (6, 5, 5, 4, 3, 2, 1)
-
+#
 # # # Concatenate
 # print('\nConcatenate')
 # contup1 = (1,2,3,4,5)
@@ -8686,32 +8686,32 @@ Can keep duplicate values
 # con = contup1 + contup2
 # print(con)						# (1, 2, 3, 4, 5, 4, 5, 6, 7, 8)
 # print(tuple(sorted(con)))		# (1, 2, 3, 4, 4, 5, 5, 6, 7, 8)
-
+#
 # # # Iterating
 # print('\nIterating')
 # tupiter = ('a','b','c','d','e','f')
 # for i in tupiter:
 # 	print(i,end = ' ')			# a b c d e f
 # print()
-
+#
 # # # Checking Element in tuple
 # print('\nChecking Element in tuple')
 # print(2 in tup1)				# True
 # print(88 in tup1)				# False
-
+#
 # # # Checking Count
 # print('\nChecking Count')
 # tupcount = (1,1,1,2,2,3,4,4,5,5,5,5,6,7,8,9)
 # print(tupcount.count(1))		# 3
 # print(tupcount.count(5))		# 4
 # print(tupcount.count(88))		# 0
-
+#
 # # # Finding Index
 # print('\nFinding Index')
 # tupind = (1,2,3,4,5,6,7,8)
 # print(tupind.index(5))			# 4
 # # print(tupind.index(88))			# ERROR
-
+#
 # # # Multiplying Tuple
 # print('\nMultiplying Tuple')
 # tupmul = (1,11,2,22)
@@ -8748,109 +8748,9 @@ Explanation:  It's an decreasing sequence by 2.  So, the next three numbers are 
 # 		emptylist.append(x)
 # 		x += diff
 # 	return tuple(emptylist)
-# 
+#
 # numbers = (5, 6, 8, 7, 42)
 # print(sequence(numbers))
-
-
-
-'''
-FUNCTIONS
-
-'def' : Keyword used to define the function
-'''
-
-# def greet():						# greet ---> name of the function
-# 	print(i,"Hey! Mayank. Your function is working")
-# greet()								# Hey! Mayank. Your function is working
-
-# for i in range(1,100 + 1):
-	# print(i,greet())				# Gives None
-	# print(i,end = ' ')
-	# greet()						# Won't give None
-
-# [greet() for i in range(10)]		# runs greet function 10 times
-
-
-'''
-In function if you use same fucntion again then the last function you've written will be executed
-'''
-# def updating():
-# 	print('First Update')
-# def updating():
-# 	print('Second Update')
-# def updating():
-# 	print('Third Update')
-
-# updating()
-'''
-In above all functions have same name 'updating()'.So, the last updated function will work
-'''
-
-
-# # Global variable & Local variable (Scope of the function)
-# g_val = 10						# Global Variable
-# def greet():
-# 	l_val = 5					# Local Variable
-# 	print(g_val,l_val)
-# greet()							# 10 5
-# print(g_val)					# 10
-# # print(l_val)					# ERROR :- B'koz l_val is the local variable for the function.So, it can't be called/printed outside of the function
-
-
-
-# # Multiple variable in function
-
-# def greet(n):
-# 	print('Hello!',n.upper())
-# greet('Mayank')						# Hello! MAYANK
-#
-# def greet(n):
-# 	print('Hello!',n.upper())
-# greet()								# ERROR
-#
-# def greet(n = 'Nothing to pass'):		# Default parameter
-# 	print('Hello!',n.upper())
-# greet()								# Hello! NOTHING TO PASS
-
-
-# def subm(a = 0,b = 0):
-# 	print(a,b,a+b)
-#
-# subm(5,2)					# 5 2 7
-# subm(9)						# 9 0 9
-# # subm(,5)					# ERROR
-# subm(a = 5,b = 10)			# 5 10 15
-# subm(a = 10,b = 5)			# 10 5 15
-# # subm(x = 2,y = 3)			# ERROR :- B'koz input in function is (a,b)
-# subm()						# 0 0 0
-
-
-# # RETURN
-# def subm(a = 0,b = 0):
-# 	return a,b,a + b			# If parameters are more than one than it return on the tuple
-#
-# var1 = subm(5,2)
-# print(var1)						# (5, 2, 7)
-# print(type(var1))				# <class 'tuple'>
-
-
-# def subm(a = 0,b = 0):
-# 	return (a + b)
-#
-# var1 = subm(5,2)
-# print(var1)						# 7
-# print(type(var1))				# <class 'int'>
-
-
-# # Packing | Unpacking
-# def fun1(a=0,b=0,c=0):
-# 	sum1 = a + b + c
-# 	mul1 = a * b * c
-# 	return sum1,mul1
-#
-# s1,s2 = fun1(1,2,3)
-# print(s1,s2)				# 6 6
 
 
 
@@ -9003,24 +8903,17 @@ In above all functions have same name 'updating()'.So, the last updated function
 
 # # Program to check repeating digit:
 # num1 = int(input('Enter Numebr: '))
-# # x = '2'
-# # y = '2'
-# # print(x == y)
 # lambai = len(str(num1))
-# # print(lambai)
-# # print(str(num1)[2])
 # khaali = []
 # for i in range(lambai):
-# 	# khaali.append(str(num1)[i])
 # 	if str(num1)[i] in khaali:
 # 		khaali.append( str( num1 )[ i ] )
 # 		print('Yes!','Repeated Number: ',str( num1 )[ i ])
 # 	else:
 # 		khaali.append( str( num1 )[ i ] )
-# 		# pass
-# # print(khaali)
 # number = int(''.join(khaali))
 # print('Output Number:', number)
+
 
 
 
@@ -9028,16 +8921,119 @@ In above all functions have same name 'updating()'.So, the last updated function
 # num1 = int(input('Enter Number: '))
 # lambai = len(str(num1))
 # khaali = []
-# 
+#
 # for i in range(lambai):
 #     if str(num1)[i] not in khaali:
 #         khaali.append(str(num1)[i])
 #     else:
 #         print('Yes')
-# 
+#
 # # Convert the list of unique digits back to a number
 # result_number = int(''.join(khaali))
-# 
+#
 # print('Output Number:', result_number)
+
+
+
+# a = [1,2,3]
+# b = a.append(4)
+# print(a)				# [1, 2, 3, 4]
+# print(b)				# None
+
+
+# Tuple = (64,65,'A')
+# Max = max(Tuple)
+# print(Tuple)			# Error
+
+
+# s = 'Python Programming'
+# result = s.split(" ")[-1]
+# print(result)			# Programming
+
+
+
+
+'''Doubly Linked List'''
+# class Node:
+#     def __init__(self, elem, next=None, prev=None):
+#         self.elem = elem
+#         self.next = next
+#         self.prev = prev
+#
+#
+# class DLL:
+#     def __init__(self):
+#         self.head = None
+#         self.tail = None
+#         self.length = 0
+#
+#     def insert(self, elem):
+#         new_node = Node(elem)
+#         if self.head is None:
+#             self.head = new_node
+#             self.tail = self.head
+#         else:
+#             new_node.prev = self.tail
+#             self.tail.next = new_node
+#             self.tail = new_node
+#         self.length += 1
+#
+#     def delete(self, val):
+#         temp = self.head
+#         while temp:
+#             if temp.elem == val:
+#                 if temp.prev:
+#                     temp.prev.next = temp.next
+#                 else:
+#                     self.head = temp.next
+#                 if temp.next:
+#                     temp.next.prev = temp.prev
+#                 else:
+#                     self.tail = temp.prev
+#                 self.length -= 1
+#                 return True
+#             temp = temp.next
+#         return False
+#
+#
+# class BrowserNavigation(DLL):
+#     def __init__(self):
+#         super(BrowserNavigation, self).__init__()
+#         self.position = None
+#
+#     def backward(self):
+#         if self.position and self.position.prev:
+#             self.position = self.position.prev
+#             print("Visiting {}".format(self.position.elem))
+#         else:
+#             print('Nothing to go backward to!')
+#
+#     def forward(self):
+#         if self.position and self.position.next:
+#             self.position = self.position.next
+#             print("Visiting {}".format(self.position.elem))
+#         else:
+#             print("Nothing to go forward to!")
+#
+#     def visit(self, site):
+#         self.insert(site)
+#         self.position = self.tail
+#         print('Visiting {}'.format(self.position.elem))
+#
+#
+# # Example usage:
+# browser = BrowserNavigation()
+# browser.visit("google.com")
+# browser.visit("example.com")
+# browser.visit("openai.com")
+# browser.backward()
+# browser.forward()
+
+
+# bn = BrowserNavigation()
+# bn.forward()
+# bn.backward()
+# bn.visit( "www.youtube.com")
+
 
 
