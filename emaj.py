@@ -8489,6 +8489,8 @@ Problem Statement - Count Occurrences of each unique word in a Sentence
 #
 #
 #
+#
+#
 # '''Circular Linked List'''
 # class Node:
 # 	def __init__( self,data ):
@@ -8959,14 +8961,12 @@ In above all functions have same name 'updating()'.So, the last updated function
 #         self.elem = elem
 #         self.next = next
 #         self.prev = prev
-#
-#
+# 
 # class DLL:
 #     def __init__(self):
 #         self.head = None
 #         self.tail = None
 #         self.length = 0
-#
 #     def insert(self, elem):
 #         new_node = Node(elem)
 #         if self.head is None:
@@ -8977,7 +8977,6 @@ In above all functions have same name 'updating()'.So, the last updated function
 #             self.tail.next = new_node
 #             self.tail = new_node
 #         self.length += 1
-#
 #     def delete(self, val):
 #         temp = self.head
 #         while temp:
@@ -8994,46 +8993,344 @@ In above all functions have same name 'updating()'.So, the last updated function
 #                 return True
 #             temp = temp.next
 #         return False
-#
-#
+# 
 # class BrowserNavigation(DLL):
 #     def __init__(self):
 #         super(BrowserNavigation, self).__init__()
 #         self.position = None
-#
 #     def backward(self):
 #         if self.position and self.position.prev:
 #             self.position = self.position.prev
 #             print("Visiting {}".format(self.position.elem))
 #         else:
 #             print('Nothing to go backward to!')
-#
 #     def forward(self):
 #         if self.position and self.position.next:
 #             self.position = self.position.next
 #             print("Visiting {}".format(self.position.elem))
 #         else:
 #             print("Nothing to go forward to!")
-#
 #     def visit(self, site):
 #         self.insert(site)
 #         self.position = self.tail
 #         print('Visiting {}'.format(self.position.elem))
-#
-#
-# # Example usage:
+# 
+# 
 # browser = BrowserNavigation()
 # browser.visit("google.com")
 # browser.visit("example.com")
 # browser.visit("openai.com")
+# print('Backward')
 # browser.backward()
+# print('Forward')
 # browser.forward()
-
-
+# 
 # bn = BrowserNavigation()
 # bn.forward()
 # bn.backward()
 # bn.visit( "www.youtube.com")
+
+
+
+'''Singaly Linked List'''
+# class Node:
+# 	def __init__(self,data):
+# 		self.data = data
+# 		self.next = None
+#
+# class SLL:
+# 	def __init__( self ):
+# 		self.head = None
+# 	def display( self ):
+# 		temp = self.head
+# 		if temp is None:
+# 			print('Nothing to Display')
+# 		while temp:
+# 			print(temp.data,' ---> ',end = '')
+# 			temp = temp.next
+
+# l1 = SLL()
+#
+# n1 = Node(10)
+# l1.head = n1
+# n2 = Node(20)
+# n1.next = n2
+# n3 = Node(30)
+# n2.next = n3
+# n4 = Node(40)
+# n3.next = n4
+# n5 = Node(50)
+# n4.next = n5
+# l1.display()
+
+
+
+
+# class Node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+# class SLL:
+# 	def __init__(self):
+# 		self.head = None
+# 	def display( self ):
+# 		temp = self.head
+# 		if temp is None:
+# 			print('Nothing to Display')
+# 		while temp:
+# 			print(temp.data,end = ' ')
+# 			if temp.next is not None:
+# 				print('-->',end = ' ')
+# 			if temp.next is None:
+# 				print('Ended')
+# 			temp = temp.next
+# 	def insert_at_first( self,data ):
+# 		nb = Node(data)
+# 		nb.next = self.head
+# 		self.head = nb
+#
+# l1 = SLL()
+#
+# n1 = Node(10)
+# l1.head = n1
+# n2 = Node(20)
+# n1.next = n2
+# n3 = Node(30)
+# n2.next = n3
+#
+# n4 = l1.insert_at_first(88)
+# l1.display()
+
+
+
+
+# class Node:
+# 	def __init__(self,data):
+# 		self.data = data
+# 		self.next = None
+#
+# class SLL:
+# 	def __init__(self):
+# 		self.head = None
+# 	def display( self ):
+# 		temp = self.head
+# 		if temp is None:
+# 			print('NOTHING TO DISPLAY !!!!')
+# 		while temp:
+# 			print(temp.data,end = ' ')
+# 			if temp.next is not None:
+# 				print('-->',end = ' ')
+# 			temp = temp.next
+# 	def insert_at_first( self,data ):
+# 		nb = Node(data)
+# 		nb.next = self.head
+# 		self.head = nb
+# 	def insert_at_last( self,data ):
+# 		ne = Node(data)
+# 		temp = self.head
+# 		while temp.next:
+# 			temp = temp.next
+# 		temp.next = ne
+# 	def insert_at_mid( self,pos,data ):
+# 		nm = Node(data)
+# 		temp = self.head
+# 		for i in range(pos - 2):
+# 			temp = temp.next
+# 		nm.data = data
+# 		nm.next = temp.next
+# 		temp.next = nm
+#
+# l1 = SLL()
+#
+# n1 = Node(10)
+# l1.head = n1
+# n2 = Node(20)
+# n1.next = n2
+# n3 = Node(30)
+# n2.next = n3
+#
+# new_node1 = l1.insert_at_first(0)
+# new_node2 = l1.insert_at_first(-10)
+#
+# new_node3 = l1.insert_at_last(100)
+# new_node4 = l1.insert_at_last(200)
+#
+# new_node5 = l1.insert_at_mid(1,'added_1')
+# new_node6 = l1.insert_at_mid(6,'added_2')
+#
+# l1.display()
+
+
+
+
+
+# class Node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+# class SLL:
+# 	def __init__(self):
+# 		self.head = None
+# 	def display( self ):
+# 		print('\n\n\nDisplaying Final List:\n')
+# 		temp = self.head
+# 		if temp is None:
+# 			print('NOTHING TO DISPLAY !!!!')
+# 		while temp:
+# 			print(temp.data,end ='')
+# 			if temp.next is not None:
+# 				print(' --> ',end = '')
+# 			temp = temp.next
+# 	def insert_at_first( self,data ):
+# 		nb = Node(data)
+# 		nb.next = self.head
+# 		self.head = nb
+# 		print('Insertion processed at first:',self.head.data)
+# 	def insert_at_last( self,data ):
+# 		ne = Node(data)
+# 		temp = self.head
+# 		while temp.next:
+# 			temp = temp.next
+# 		temp.next = ne
+# 		print('Insertion processed at last:',temp.data)
+# 	def insert_at_mid( self,index,data ):
+# 		pos = index
+# 		nm = Node(data)
+# 		temp = self.head
+# 		for i in range(pos - 1 - 1):
+# 			temp = temp.next
+# 		nm.data = data
+# 		print(f"Insertion processed at position '{pos}' of '{nm.data}'")
+# 		nm.next = temp.next
+# 		temp.next = nm
+# 	def delete_at_first( self ):
+# 		temp = self.head
+# 		self.head = temp.next
+# 		temp.next = None
+# 		print('Deletion Processed:',temp.data)
+# 	def delete_at_last( self ):
+# 		temp = self.head.next
+# 		prev = self.head
+# 		while temp.next is not None:
+# 			temp = temp.next
+# 			prev = prev.next
+# 		prev.next = None
+# 		print(f"Deletion of last element '{temp.data}' is processed")
+# 	def delete_at_mid( self,index ):
+# 		pos = index
+# 		temp = self.head.next
+# 		prev = self.head
+# 		for i in range(1,pos - 1):
+# 			temp = temp.next
+# 			prev = prev.next
+# 		prev.next = temp.next
+# 		temp.next = None
+# 		print(f"Deletion of {temp.data} is done at position {pos}")
+#
+#
+#
+# l1 = SLL()
+# n1 = Node(10)
+# l1.head = n1
+# n2 = Node(20)
+# n1.next = n2
+# n3 = Node(30)
+# n2.next = n3
+# n4 = Node(40)
+# n3.next = n4
+#
+# first1 = l1.insert_at_first(0)
+# first2 = l1.insert_at_first(-10)
+#
+# last1 = l1.insert_at_last(100)
+#
+# mid1 = l1.insert_at_mid(2,'mid_1')
+# mid2 = l1.insert_at_mid(4,'mid_2')
+#
+# del_first = l1.delete_at_first()
+#
+# del_last = l1.delete_at_last()
+#
+# del_mid = l1.delete_at_mid(3)
+#
+# l1.display()
+
+
+
+
+
+'''
+Laptop Price Predictor by it's display size
+'''
+'''
+s1 = []
+sd = {}
+p1 = []
+pd = {}
+e1 = []
+while True:
+	sz = eval( input( 'Enter Display Size:' ) )
+	s1.append(sz)
+	tab1 = f"|	{s1.append(sz)}	|"
+	def laptop_price ( size ):
+		price = round( (16497.25) * (size) + (-194535.3) )
+		p1.append(price)
+		# tab2 = f"|	{p1.append(price)}  |"
+		print( '___________________________\n|	 SIZE	 |	  PRICE	  |\n---------------------------' )
+		if (size*10) % 10 == 0 and (len(str(price)) == 5 ):
+			e1.append(f"|	  {size}	 |	 {price}/-  |")
+			print(f"|	  {size}	 |	 {price}/-  |\n---------------------------")
+			# print(e1)
+		if (size*10) % 10 != 0 and (len(str(price)) == 5 ):
+			e1.append(f"|	 {size}	 |	 {price}/-  |")
+			print(f"|	 {size}	 |	 {price}/-  |\n---------------------------")
+		if ((size*10) % 10 == 0 and (len(str(price)) > 5 )):
+			e1.append(f"|	  {size}	 |	{price}/-  |")
+			print(f"|	  {size}	 |	{price}/-  |\n---------------------------")
+		if (size*10) % 10 != 0 and (len(str(price)) > 5 ):
+			e1.append(f"|	 {size} 	 |	{price}/-  |")
+			print(f"|	 {size} 	 |	{price}/-  |\n---------------------------")
+		# inp1 = f"|	 {size}	 	 |	 {price}	|\n"
+		# print(inp1)
+		# return print( f"Expected price of {size}' Television is {price}")
+		# for i in e1:
+		# 	print(i)
+		return print(f"Press Enter To Continue.")
+	# head1 = print('_________________________\n|	 SIZE	 |	 PRICE	|\n-------------------------')
+	# mid1 = print('|	SIZE	|	PRICE	|')
+	# low1 = print('-------------------------')
+	laptop_price( sz )
+	addmore = input( "Enter 'n' to end the inquery.\n" )
+	addmore = addmore.lower()
+	if addmore == 'n':
+		print( s1 )
+		print( p1 )
+		print( '___________________________\n|	 SIZE	 |	  PRICE	  |\n---------------------------' )
+		for i in e1:
+			print(i)
+		print('---------------------------')
+		break
+# print('{ SIZE(inch) : PRICE(Rupees/-) }')
+# dct = { j : f"{str(i)}/-" for i in p1 for j in s1 }
+# print( dct )
+# print(head1)
+'''
+
+
+
+
+'''Pent House Price Prediction'''
+
+# def phpp ( floor1 ):
+# 	price = ((6657829 * floor1) + 140716234.3)
+# 	return print(price)
+#
+# flr = int(input('Enter Floor: '))
+# phpp(flr)
+
+
+
+
 
 
 
