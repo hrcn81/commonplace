@@ -8961,7 +8961,7 @@ In above all functions have same name 'updating()'.So, the last updated function
 #         self.elem = elem
 #         self.next = next
 #         self.prev = prev
-# 
+#
 # class DLL:
 #     def __init__(self):
 #         self.head = None
@@ -8993,7 +8993,7 @@ In above all functions have same name 'updating()'.So, the last updated function
 #                 return True
 #             temp = temp.next
 #         return False
-# 
+#
 # class BrowserNavigation(DLL):
 #     def __init__(self):
 #         super(BrowserNavigation, self).__init__()
@@ -9014,8 +9014,8 @@ In above all functions have same name 'updating()'.So, the last updated function
 #         self.insert(site)
 #         self.position = self.tail
 #         print('Visiting {}'.format(self.position.elem))
-# 
-# 
+#
+#
 # browser = BrowserNavigation()
 # browser.visit("google.com")
 # browser.visit("example.com")
@@ -9024,7 +9024,7 @@ In above all functions have same name 'updating()'.So, the last updated function
 # browser.backward()
 # print('Forward')
 # browser.forward()
-# 
+#
 # bn = BrowserNavigation()
 # bn.forward()
 # bn.backward()
@@ -9262,59 +9262,58 @@ In above all functions have same name 'updating()'.So, the last updated function
 '''
 Laptop Price Predictor by it's display size
 '''
-'''
-s1 = []
-sd = {}
-p1 = []
-pd = {}
-e1 = []
-while True:
-	sz = eval( input( 'Enter Display Size:' ) )
-	s1.append(sz)
-	tab1 = f"|	{s1.append(sz)}	|"
-	def laptop_price ( size ):
-		price = round( (16497.25) * (size) + (-194535.3) )
-		p1.append(price)
-		# tab2 = f"|	{p1.append(price)}  |"
-		print( '___________________________\n|	 SIZE	 |	  PRICE	  |\n---------------------------' )
-		if (size*10) % 10 == 0 and (len(str(price)) == 5 ):
-			e1.append(f"|	  {size}	 |	 {price}/-  |")
-			print(f"|	  {size}	 |	 {price}/-  |\n---------------------------")
-			# print(e1)
-		if (size*10) % 10 != 0 and (len(str(price)) == 5 ):
-			e1.append(f"|	 {size}	 |	 {price}/-  |")
-			print(f"|	 {size}	 |	 {price}/-  |\n---------------------------")
-		if ((size*10) % 10 == 0 and (len(str(price)) > 5 )):
-			e1.append(f"|	  {size}	 |	{price}/-  |")
-			print(f"|	  {size}	 |	{price}/-  |\n---------------------------")
-		if (size*10) % 10 != 0 and (len(str(price)) > 5 ):
-			e1.append(f"|	 {size} 	 |	{price}/-  |")
-			print(f"|	 {size} 	 |	{price}/-  |\n---------------------------")
-		# inp1 = f"|	 {size}	 	 |	 {price}	|\n"
-		# print(inp1)
-		# return print( f"Expected price of {size}' Television is {price}")
-		# for i in e1:
-		# 	print(i)
-		return print(f"Press Enter To Continue.")
-	# head1 = print('_________________________\n|	 SIZE	 |	 PRICE	|\n-------------------------')
-	# mid1 = print('|	SIZE	|	PRICE	|')
-	# low1 = print('-------------------------')
-	laptop_price( sz )
-	addmore = input( "Enter 'n' to end the inquery.\n" )
-	addmore = addmore.lower()
-	if addmore == 'n':
-		print( s1 )
-		print( p1 )
-		print( '___________________________\n|	 SIZE	 |	  PRICE	  |\n---------------------------' )
-		for i in e1:
-			print(i)
-		print('---------------------------')
-		break
+
+# s1 = []
+# sd = {}
+# p1 = []
+# pd = {}
+# e1 = []
+# while True:
+# 	sz = eval( input( 'Enter Display Size:' ) )
+# 	s1.append(sz)
+# 	tab1 = f"|	{s1.append(sz)}	|"
+# 	def laptop_price ( size ):
+# 		price = round( (16497.25) * (size) + (-194535.3) )
+# 		p1.append(price)
+# 		# tab2 = f"|	{p1.append(price)}  |"
+# 		print( '___________________________\n|	 SIZE	 |	  PRICE	  |\n---------------------------' )
+# 		if (size*10) % 10 == 0 and (len(str(price)) == 5 ):
+# 			e1.append(f"|	  {size}	 |	 {price}/-  |")
+# 			print(f"|	  {size}	 |	 {price}/-  |\n---------------------------")
+# 			# print(e1)
+# 		if (size*10) % 10 != 0 and (len(str(price)) == 5 ):
+# 			e1.append(f"|	 {size}	 |	 {price}/-  |")
+# 			print(f"|	 {size}	 |	 {price}/-  |\n---------------------------")
+# 		if ((size*10) % 10 == 0 and (len(str(price)) > 5 )):
+# 			e1.append(f"|	  {size}	 |	{price}/-  |")
+# 			print(f"|	  {size}	 |	{price}/-  |\n---------------------------")
+# 		if (size*10) % 10 != 0 and (len(str(price)) > 5 ):
+# 			e1.append(f"|	 {size} 	 |	{price}/-  |")
+# 			print(f"|	 {size} 	 |	{price}/-  |\n---------------------------")
+# 		# inp1 = f"|	 {size}	 	 |	 {price}	|\n"
+# 		# print(inp1)
+# 		# return print( f"Expected price of {size}' Television is {price}")
+# 		# for i in e1:
+# 		# 	print(i)
+# 		return print(f"Press Enter To Continue.")
+# 	# head1 = print('_________________________\n|	 SIZE	 |	 PRICE	|\n-------------------------')
+# 	# mid1 = print('|	SIZE	|	PRICE	|')
+# 	# low1 = print('-------------------------')
+# 	laptop_price( sz )
+# 	addmore = input( "Enter 'n' to end the inquery.\n" )
+# 	addmore = addmore.lower()
+# 	if addmore == 'n':
+# 		print( s1 )
+# 		print( p1 )
+# 		print( '___________________________\n|	 SIZE	 |	  PRICE	  |\n---------------------------' )
+# 		for i in e1:
+# 			print(i)
+# 		print('---------------------------')
+# 		break
 # print('{ SIZE(inch) : PRICE(Rupees/-) }')
 # dct = { j : f"{str(i)}/-" for i in p1 for j in s1 }
-# print( dct )
-# print(head1)
-'''
+# print(dct)
+# # print(head1)
 
 
 
