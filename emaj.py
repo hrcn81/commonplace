@@ -9331,5 +9331,390 @@ Laptop Price Predictor by it's display size
 
 
 
+''' Doubly Linked List '''
+# class Node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+# 		self.prev = None
+# 
+# class DLL:
+# 	def __init__(self):
+# 		self.head = None
+# 	def display( self ):
+# 		if self.head is None:
+# 			print('NOTHING TO DISPLAY !!!!')
+# 		else:
+# 			temp = self.head
+# 			while temp:
+# 				print(temp.data,' --> ',end = ' ')
+# 				temp = temp.next
+
+
+
+# class Node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+# 		self.prev = None
+#
+# class DLL:
+# 	def __init__( self ):
+# 		self.head = None
+# 	def display( self ):
+# 		if self.head is None:
+# 			print('NOTHING TO DISPLAY !!!!')
+# 		else:
+# 			temp = self.head
+# 			while temp:
+# 				print(temp.data,'--> ',end ='')
+# 				temp = temp.next
+# 	def insert_at_first( self,data ):
+# 		n = Node(data)
+# 		temp = self.head
+# 		temp.prev = n
+# 		n.next = temp
+# 		self.head = n
+# 	def insert_at_last( self,data ):
+# 		n = Node(data)
+# 		temp = self.head
+# 		while temp.next is not None:
+# 			temp = temp.next
+# 		temp.next = n
+# 		n.prev = temp
+# 	def insert_at_mid( self,pos,data ):
+# 		self.pos = pos
+# 		n = Node(data)
+# 		temp = self.head
+# 		for i in range(1,pos - 1):
+# 			temp = temp.next
+# 		n.prev = temp
+# 		n.next = temp.next
+# 		temp.next.prev = n
+# 		temp.next = n
+
+
+
+
+# class Node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+# 		self.prev = None
+#
+# class DLL:
+# 	def __init__(self):
+# 		self.head = None
+# 	def display( self ):
+# 		if self.head is None:
+# 			print('NOTHING TO DISPLAY !!!!')
+# 		else:
+# 			temp = self.head
+# 			while temp:
+# 				print(temp.data,'--> ',end = '')
+# 				temp = temp.next
+# 	def insert_at_first( self,data ):
+# 		n = Node(data)
+# 		temp = self.head
+# 		temp.prev = n
+# 		n.next = temp
+# 		self.head = n
+# 	def insert_at_last( self,data ):
+# 		n = Node(data)
+# 		temp = self.head
+# 		while temp.next is not None:
+# 			temp = temp.next
+# 		temp.next = n
+# 		n.prev = temp
+# 	def insert_at_mid( self,pos,data ):
+# 		n = Node(data)
+# 		self.pos = pos
+# 		temp = self.head
+# 		for i in range(1,pos - 1):
+# 			temp = temp.next
+# 		n.prev = temp
+# 		n.next = temp.next
+# 		temp.next.prev = n
+# 		temp.next = n
+# 	def delete_at_first( self ):
+# 		temp = self.head
+# 		self.head = temp.next
+# 		temp.next = None
+# 		self.head.prev = None
+# 	def delete_at_last( self ):
+# 		temp = self.head.next
+# 		before = self.head
+# 		while temp.next is not None:
+# 			temp = temp.next
+# 			before = before.next
+# 		before.next = None
+# 		temp.prev = None
+
+
+
+# class Node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+# 		self.before = None
+# class DLL:
+# 	def __init__( self ):
+# 		self.head = None
+# 	def display( self ):
+# 		if self.head is None:
+# 			print('NOTHING TO DISPLAY !!!!')
+# 		else:
+# 			temp = self.head
+# 			while temp:
+# 				print(temp.data,'--> ',end = '')
+# 				temp = temp.next
+# 	def insert_at_first( self,data ):
+# 		n = Node(data)
+# 		temp = self.head
+# 		temp.prev = n
+# 		n.next = temp
+# 		self.head = n
+# 	def insert_at_last( self,data ):
+# 		n = Node(data)
+# 		temp = self.head
+# 		while temp.next is not None:
+# 			temp = temp.next
+# 		temp.next = n
+# 		n.prev = temp
+#
+#
+#
+#
+#
+# l1 = DLL()
+# n1 = Node(10)
+# l1.head = n1
+# n2 = Node(20)
+# n1.next = n2
+#
+# first_0 = l1.insert_at_first(0)
+# first_1 = l1.insert_at_first(-10)
+#
+# last_100 = l1.insert_at_last(100)
+# last_200 = l1.insert_at_last(200)
+#
+# # mid_1 = l1.insert_at_mid(2,'Mid_at_2')
+# # mid_2 = l1.insert_at_mid(4,'Mid_at_4')
+# # l1.display()
+# # print('\n')
+# #
+# # del_1 = l1.delete_at_first()
+# # del_2 = l1.delete_at_last()
+#
+# l1.display()
+
+
+
+
+
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+#         self.prev = None
+#
+# class DLL:
+#     def __init__(self):
+#         self.head = None
+#
+#     def display(self):
+#         if self.head is None:
+#             print('NOTHING TO DISPLAY !!!!')
+#         else:
+#             temp_forward = self.head
+#
+#             while temp_forward:
+#                 print(temp_forward.data, '<-->', end=' ')
+#                 temp_forward = temp_forward.next
+#
+#             temp_backward = self.head
+#             while temp_backward.next:
+#                 temp_backward = temp_backward.next
+#
+#             while temp_backward.prev:
+#                 print(temp_backward.prev.data, '<-->', end=' ')
+#                 temp_backward = temp_backward.prev
+#
+#     def insert_at_first(self, data):
+#         n = Node(data)
+#         if self.head:
+#             temp = self.head
+#             temp.prev = n
+#             n.next = temp
+#         self.head = n
+#
+#     def insert_at_last(self, data):
+#         n = Node(data)
+#         if self.head is None:
+#             self.head = n
+#             return
+#
+#         temp = self.head
+#         while temp.next:
+#             temp = temp.next
+#
+#         temp.next = n
+#         n.prev = temp
+#
+#
+# # Example usage:
+# dll = DLL()
+# dll.insert_at_last(1)
+# dll.insert_at_last(2)
+# dll.insert_at_last(3)
+#
+# print("Display in Both Directions:")
+# dll.display()
+
+
+
+
+# l1 = [[1,2,3],[4,4,5,6],[7,8,9]]
+# print(len(l1[1]))
+# print(len(l1[0]))
+
+
+
+
+# # Task 1
+# l11 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+#
+# for i in l11:
+#     for j in i:
+#         print( j, end = '\t' )
+#     print()
+
+
+
+# # Task 2
+# l1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# l2 = [[11, 12, 13], [14, 15, 16], [17, 18, 19]]
+#
+#
+# for i in range( len( l1 ) ):
+# 	for j in range( len( l1[i] ) ):
+# 		print( l1[i][j], end = ' ' )
+# 	print( end = ' +  ' )
+# 	for j in range( len( l2[i] ) ):
+# 		print( l2[i][j],end = ' ' )
+# 	print( end = ' =  ' )
+# 	for j in range( len( l1[i] ) ):
+# 		sum_element = l1[i][j] + l2[i][j]
+# 		print( sum_element,end = ' ' )
+# 	print()
+
+
+
+
+# # Task 3
+# l131 = [[1,2,0],[4,0,6],[0,8,9]]
+#
+# for i in range(len(l131)):
+# 	for j in range(len(l131)):
+# 		if l131[i][j] != 0:
+# 			print(i+1,j+1,'=',l131[i][j])
+
+
+
+
+# # Task 1 - User Input
+# rows_task1 = int(input("Enter the number of rows for Task 1: "))
+# cols_task1 = int(input("Enter the number of columns for Task 1: "))
+#
+# matrix_task1 = []
+#
+# print("Enter the elements of the matrix:")
+# for i in range(rows_task1):
+#     row = []
+#     for j in range(cols_task1):
+#         element = int(input(f"Enter element at position ({i + 1}, {j + 1}): "))
+#         row.append(element)
+#     matrix_task1.append(row)
+#
+# print("Entered Matrix for Task 1:")
+# for i in matrix_task1:
+#     for j in i:
+#         print(j, end='\t')
+#     print()
+#
+#
+#
+# # Task 2 - User Input for Two Matrices Addition
+# rows_task2 = int(input("Enter the number of rows for Task 2: "))
+# cols_task2 = int(input("Enter the number of columns for Task 2: "))
+#
+# matrix1_task2 = []
+# matrix2_task2 = []
+#
+# print("Enter the elements of the first matrix:")
+# for i in range(rows_task2):
+#     row = []
+#     for j in range(cols_task2):
+#         element = int(input(f"Enter element at position ({i + 1}, {j + 1}) for Matrix 1: "))
+#         row.append(element)
+#     matrix1_task2.append(row)
+#
+# print("Enter the elements of the second matrix:")
+# for i in range(rows_task2):
+#     row = []
+#     for j in range(cols_task2):
+#         element = int(input(f"Enter element at position ({i + 1}, {j + 1}) for Matrix 2: "))
+#         row.append(element)
+#     matrix2_task2.append(row)
+#
+# print("Matrix 1:")
+# for i in matrix1_task2:
+#     for j in i:
+#         print(j, end=' ')
+#     print()
+#
+# print("Matrix 2:")
+# for i in matrix2_task2:
+#     for j in i:
+#         print(j, end=' ')
+#     print()
+#
+# print("Sum of Matrices:")
+# for i in range(rows_task2):
+#     for j in range(cols_task2):
+#         sum_element = matrix1_task2[i][j] + matrix2_task2[i][j]
+#         print(sum_element, end=' ')
+#     print()
+
+
+# # Task 3 - User Input for Non-zero Elements
+# rows_task3 = int(input("Enter the number of rows for Task 3: "))
+# cols_task3 = int(input("Enter the number of columns for Task 3: "))
+#
+# matrix_task3 = []
+#
+# print("Enter the elements of the matrix:")
+# for i in range(rows_task3):
+#     row = []
+#     for j in range(cols_task3):
+#         element = int(input(f"Enter element at position ({i + 1}, {j + 1}): "))
+#         row.append(element)
+#     matrix_task3.append(row)
+#
+# print("Entered Matrix for Task 3:")
+# for i in matrix_task3:
+#     for j in i:
+#         print(j, end='\t')
+#     print()
+#
+# print("Non-zero elements:")
+# for i in range(rows_task3):
+#     for j in range(cols_task3):
+#         if matrix_task3[i][j] != 0:
+#             print(f"({i + 1}, {j + 1}) = {matrix_task3[i][j]}")
+
+
+
+
 
 
