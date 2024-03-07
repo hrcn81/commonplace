@@ -9716,5 +9716,176 @@ Laptop Price Predictor by it's display size
 
 
 
+# # Create two 3x3 matrices
+# matrix1 = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+#
+# matrix2 = [
+#     [9, 8, 7],
+#     [6, 5, 4],
+#     [3, 2, 1]
+# ]
+#
+# # Print the matrices side by side
+# print("Matrix 1:")
+# for row in matrix1:
+#     print(row)
+#
+# print("\nMatrix 2:")
+# for row in matrix2:
+#     print(row)
+#
+# # Multiply the matrices
+# result_matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+# for i in range(len(matrix1)):
+#     for j in range(len(matrix2[0])):
+#         for k in range(len(matrix2)):
+#             result_matrix[i][j] += matrix1[i][k] * matrix2[k][j]
+#
+# # Print the multiplication result
+# print("\nMultiplication Result:")
+# for row in result_matrix:
+#     print(row)
+
+
+
+
+# mat_1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# mat_2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+#
+# # Initialize the result matrix with zeros
+# mul_mat = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+#
+# # Display matrices mat_1 and mat_2 side by side
+# print("Matrix 1\t\tMatrix 2")
+# for i in range(len(mat_1)):
+#     print("\t".join(map(str, mat_1[i])), "\t\t", "\t".join(map(str, mat_2[i])))
+#
+# # Perform matrix multiplication
+# for i in range(len(mat_1)):
+#     for j in range(len(mat_2[0])):
+#         for k in range(len(mat_2)):
+#             mul_mat[i][j] += mat_1[i][k] * mat_2[k][j]
+#
+# # Display the result matrix side by side
+# print("\nResultant Matrix")
+# for mul in mul_mat:
+#     print("\t".join(map(str, mul)))
+
+
+
+
+# mat_1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# mat_2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+#
+# # Check if matrices can be multiplied
+# if len(mat_1[0]) != len(mat_2):
+#     print("Matrices cannot be multiplied. Number of columns in mat_1 must be equal to the number of rows in mat_2.")
+# else:
+#     # Initialize the result matrix with zeros
+#     mul_mat = [[0 for _ in range(len(mat_2[0]))] for _ in range(len(mat_1))]
+#
+#     # Display matrices mat_1 and mat_2
+#     print("Matrix 1:")
+#     for i in mat_1:
+#         print(i)
+#
+#     print("\nMatrix 2:")
+#     for j in mat_2:
+#         print(j)
+#
+#     # Perform matrix multiplication
+#     for i in range(len(mat_1)):
+#         for j in range(len(mat_2[0])):
+#             for k in range(len(mat_2)):
+#                 mul_mat[i][j] += mat_1[i][k] * mat_2[k][j]
+#
+#     # Display the result matrix
+#     print("\nResultant Matrix:")
+#     for mul in mul_mat:
+#         print(mul)
+
+
+
+
+# mat_1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# mat_2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+#
+# # Display matrix 1
+# print("Matrix 1:")
+# for row in mat_1:
+#     for elem in row:
+#         print(elem, end="\t")
+#     print()
+#
+# # Display matrix 2
+# print("\nMatrix 2:")
+# for row in mat_2:
+#     for elem in row:
+#         print(elem, end="\t")
+#     print()
+#
+# # Perform matrix multiplication and directly print the result
+# print("\nResultant Matrix:")
+# for i in range(len(mat_1)):
+#     for j in range(len(mat_2[0])):
+#         result_elem = sum(mat_1[i][k] * mat_2[k][j] for k in range(len(mat_2)))
+#         print(result_elem, end="\t")
+#     print()
+
+
+
+
+
+# mat_1 = [[1,2,3],[4,5,6],[7,8,9]]
+# mat_2 = [[9,8,7],[6,5,4],[3,2,1]]
+#
+# mul_mat = [[0,0,0],[0,0,0],[0,0,0]]
+#
+# print('mat_1:\t\t\t\tmat_2:')
+# for i in range( len( mat_1 ) ):
+# 	for j in range( len( mat_1[ i ] ) ):
+# 		print( mat_1[ i ][ j ], end = '\t' )
+# 	print( '\t'*2, end = ''*2 )
+# 	for j in range( len( mat_2[ i ] ) ):
+# 		print( mat_2[ i ][ j ], end = '\t' )
+#
+# 	print()
+#
+# print('Multiplication:')
+# for i in range(len(mat_1)):
+# 	for j in range(len(mat_2[0])):
+# 		for k in range(len(mat_2)):
+# 			mul_mat[i][j] += mat_1[i][k] * mat_2[k][j]
+#
+# for mul in mul_mat:
+# 	print(mul)
+
+
+
+
+
+# mat_1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# mat_2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+#
+# print('mat_1:\t\t\t\tmat_2:')
+# for i in range(len(mat_1)):
+#     for j in range(len(mat_1[i])):
+#         print(mat_1[i][j], end='\t')
+#     print('\t'*2, end='')
+#     for j in range(len(mat_2[i])):
+#         print(mat_2[i][j], end='\t')
+#     print()
+#
+# print('\nMultiplication:')
+# for i in range(len(mat_1)):
+#     for j in range(len(mat_2[0])):
+#         result = sum(mat_1[i][k] * mat_2[k][j] for k in range(len(mat_2)))
+#         print(result, end='\t')
+#     print()
+
 
 
