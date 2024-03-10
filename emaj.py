@@ -9889,3 +9889,97 @@ Laptop Price Predictor by it's display size
 
 
 
+
+# zip
+# l1 = ['Mayank','Martin','Melech']
+# l2 = [23,24,24]
+#
+# print(list(zip(l1,l2)))
+#
+#
+# mat = [[1,2,3],[4,5,6],[7,8,9]]
+# print([list(row) for row in zip(mat)])
+#
+# print([list(row) for row in zip(*mat)])
+#
+# print([list(row) for row in zip(*[list(row) for row in zip(*mat)])])
+
+
+# lst1 = [2,4,6]
+# lst2 = [1,3,5]
+#
+# print([i*j for i,j in zip(lst1,lst2)])
+# print(sum(i*j for i,j in zip(lst1,lst2)))
+
+
+# # Filter
+# ldef = [1,2,3,4,5,6,7,8,9]
+# def even1(n):
+# 	return n % 2 == 0
+# print(list(filter(even1,ldef)))
+
+
+
+# # Lambda
+#
+# # add_num = lambda x,y : x*y
+# # print(add_num(5,10))
+#
+# num = [1,2,3,4,5,6,7,8,9]
+# ev = list(filter(lambda x: x % 2 == 0,num))
+# print(ev)
+
+
+
+
+# # Map
+# num = [1,2,3,4,5,6,7,8,9]
+# def sqr(x):
+# 	return x**2
+#
+# print(list(map(sqr,num)))
+
+# names = ['Mayank','Raj','Meet','Sandeep']
+# print(list(map(lambda x : len(x),names)))
+
+
+
+# # ASCII Code
+'''
+0 to 9 ----> Code(48 - 57)
+
+A to Z ----> Code(65 - 90)
+
+a to z ----> Code(97 - 122)
+
+ord('A') => 65
+
+chr(57) => 9
+'''
+# for i in range(33,127):
+# 	print(i,chr(i))
+
+# x = 'Mayank'
+# for i in x:
+# 	print((chr(ord(i) + 1)).upper(),end='')
+
+
+
+'''
+Understanding Errors:
+
+1.	Syntax Error	print('Mayank)
+2.	Runtime Error	print(10/0)
+3.	Logical Error	def sum(a,b):
+						return a - b
+4.	Name Error		Print('Maaynk')			can be variable or function
+5.	Type Error		print('2' + 2)
+6.	Index Error		l1 = [1,2,3,4] 			l1[6] --> error (len(l1) = 4)
+7.	Key Error		dc1 = {'a':1,'b':2} 	dc1[1] --> error because 1 is not a key
+8.	Attribute Error		x = 10
+						print(x.upper()) --> can't do it because here x is a number
+9.	Indentation Error
+10.	Import Error
+11.	Value Error		int('abc')
+'''
+
