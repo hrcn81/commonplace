@@ -127,3 +127,100 @@ Important Inbuilt Libraries
 # print(string.octdigits)					# 01234567
 
 # print(string.punctuation)					# !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+
+
+
+
+'''
+Understanding Classes and Objects
+
+OOPs
+
+class:
+i.e:
+player --> 	name :
+			health :
+			strategy :
+
+'''
+
+# print('class person:')
+# class person:
+# 	# print('Hello!')
+# 	name = 'Maaynk'
+# 	age = 23
+#
+#
+# print('\np1:')
+# p1 = person()
+# print(p1.name)
+# print(p1.age)
+#
+# # Chnaging name and age
+# print('\nUpdated:')
+# p1.name = 'Melech'
+# p1.age = 88
+# print(p1.name)
+# print(p1.age)
+#
+# # In new object class gives default values
+# print('\np2:')
+# p2 = person()
+# print(p2.name)
+# print(p2.age)
+
+
+
+
+# print('\nclass mathematics')
+# class mathematics:
+# 	name = 'Math Wizard'
+# 	def greet( self ):
+# 		print('Hello!')
+# 		print(self.name)
+#
+# print('\nmath:')
+# math = mathematics()
+# math.greet()
+# print(math.name)
+
+
+
+
+# class mathematics:
+# 	def greet( self ):
+# 		print('Hello!')
+# 		return 'Hi!'
+# 	def factorial( self,n ):
+# 		s = 1
+# 		for i in range(1,n + 1):
+# 			s *= i
+# 		return s
+# 	def lst_mul( self,lst ):
+# 		s = 1
+# 		for i in lst:
+# 			s *= i
+# 		return s
+# 	def lst_dot( self,l1,l2 ):
+# 		return [l1[i]*l2[i] for i in range(len(l1))]
+# 
+# 
+# print('\nmath:')
+# math = mathematics()
+# # math.greet()
+# print(math.greet())
+# 
+# print('\nfactorial')
+# mf = math.factorial(5)
+# print(mf)
+# 
+# print('\nlst_mul')
+# lst = [1,2,3,4,5,6]
+# print(math.lst_mul(lst))
+# 
+# print('\nlst_dot')
+# lst1 = [1,2,3,4,5]
+# lst2 = [5,4,3,2,1]
+# print(math.lst_dot(lst1,lst2))
+
