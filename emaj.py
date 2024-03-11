@@ -9983,3 +9983,106 @@ Understanding Errors:
 11.	Value Error		int('abc')
 '''
 
+
+
+
+'''
+Handling the Exceptions
+
+1.	try,except
+2.	try,except,except
+3.	try,except,except,else
+'''
+
+# print('try_1')
+# try:
+# 	x = 10
+# 	print(1)
+# 	print( x / 0 )		# iske aage kaa print nhi hoga
+# 	print(2)
+# except:
+# 	print(f'Error {x}/0 nahi ho skta')
+#
+#
+# print('\ntry_2')
+# try:
+# 	x = 10
+# 	print(1)
+# 	print( x / 10 )		# iske aage kaa print hoga
+# 	print(2)
+# except:
+# 	print(f'Error {x}/0 nahi ho skta')
+
+
+
+
+'''
+Exception with specific error
+'''
+
+# print('try_1')
+# try:
+# 	num = 0
+# 	print(num/0)
+# except ZeroDivisionError:
+# 	print('Zero is in the divisor')
+# except:
+# 	print('Unknown Error')
+#
+#
+# print('\ntry_2')
+# try:
+# 	num = 0
+# 	print(int('e23') + '0.0')
+# except ZeroDivisionError:
+# 	print('Zero is in the divisor')
+# except:
+# 	print('Unknown Error')
+
+
+
+'''
+Final exception with specific error
+'''
+
+# print('try_1')
+# try:
+# 	n1,n2 = 10,5
+# 	print(n1/n2)
+# except ZeroDivisionError as zde:
+# 	print(zde)
+# except Exception as e:
+# 	print(e)
+# else:
+# 	print('Everything is fine!')
+# finally:
+# 	print('Program End!')
+
+
+# print('\ntry_2')
+# try:
+# 	n1,n2 = 10,0
+# 	print(n1/n2)
+# except ZeroDivisionError as zde:
+# 	print(zde)
+# except Exception as e:
+# 	print(e)
+# else:
+# 	print('Everything is fine!')
+# finally:
+# 	print('Program End!')
+
+
+# print('\ntry_3')
+# try:
+# 	n1,n2 = 10,0
+# 	print(int('3.14'))
+# except ZeroDivisionError as zde:
+# 	print(zde)
+# except Exception as e:
+# 	print(e)
+# else:
+# 	print('Everything is fine!')
+# finally:
+# 	print('Program End!')
+
