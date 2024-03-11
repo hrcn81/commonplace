@@ -67,3 +67,63 @@ Important Inbuilt Libraries
 
 
 
+
+'''
+3.	datetime
+'''
+# import datetime
+
+# print(datetime.datetime.now())									# Gives current date & time
+# print(datetime.datetime(2000,3,18,2,18))							# 2000-03-18 02:18:00
+#
+# print(datetime.datetime.now().strftime("%d/%m/%y %H:%M:%S"))		# 11/03/24 09:25:30
+
+# date_1 = datetime.datetime(2000,3,18,2,18)
+# date_2 = datetime.datetime.now()
+# print((date_2 - date_1))					# 8759 days, 7:11:15.401633
+# print((date_2 - date_1).days)				# 8759
+# print((date_2 - date_1).days//30)			# Months 291
+# print((date_2 - date_1).days//365)		# Years 23
+
+
+
+
+'''
+4.	collections
+'''
+# from collections import Counter,defaultdict,OrderedDict
+
+# lst = [1,2,3,4,5,5,5,6,6,7]
+# print(Counter(lst))
+
+# d = defaultdict(int)
+# d['a'] += 2
+# print(d)
+
+# d1 = OrderedDict()
+# d1['one'] = 1
+# d1['two'] = 2
+# print(d1)
+
+
+
+
+'''
+5.	string
+'''
+# str1 = 'Mayank 1832 Solanki'
+# for i in str1:
+# 	if i not in '1234567890':
+# 		print(i)
+
+# import string
+
+# print(string.ascii_letters)				# abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+# print(string.ascii_lowercase)				# abcdefghijklmnopqrstuvwxyz
+# print(string.ascii_uppercase)				# ABCDEFGHIJKLMNOPQRSTUVWXYZ
+#
+# print(string.digits)						# 0123456789
+# print(string.hexdigits)					# 0123456789abcdefABCDEF
+# print(string.octdigits)					# 01234567
+
+# print(string.punctuation)					# !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
