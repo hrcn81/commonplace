@@ -204,23 +204,77 @@ player --> 	name :
 # 		return s
 # 	def lst_dot( self,l1,l2 ):
 # 		return [l1[i]*l2[i] for i in range(len(l1))]
-# 
-# 
+#
+#
 # print('\nmath:')
 # math = mathematics()
 # # math.greet()
 # print(math.greet())
-# 
+#
 # print('\nfactorial')
 # mf = math.factorial(5)
 # print(mf)
-# 
+#
 # print('\nlst_mul')
 # lst = [1,2,3,4,5,6]
 # print(math.lst_mul(lst))
-# 
+#
 # print('\nlst_dot')
 # lst1 = [1,2,3,4,5]
 # lst2 = [5,4,3,2,1]
 # print(math.lst_dot(lst1,lst2))
 
+
+
+
+'''
+Dynamic Programming
+'''
+# # Quicksort 1:
+# def part(myList,low,high):
+# 	pivot = myList[high]
+# 	i = low - 1
+# 	for j in range(low,high):
+# 		if myList[j] <= pivot:
+# 			i = i + 1
+# 			(myList[i],myList[j]) = (myList[j],myList[i])
+# 	(myList[i + 1],myList[high]) = (myList[high],myList[i + 1])
+# 	return i + 1
+#
+# def quickSort(myList,low,high):
+# 	if low < high:
+# 		pi = part(myList,low,high)
+# 		quickSort(myList,low,pi - 1)
+# 		quickSort(myList,pi + 1,high)
+#
+# list1 = [9,8,7,6,5,4,3,2,1]
+# list1 = [i for i in range(200+1,0,-1)]
+# print(list1)
+# n = len(list1)
+# quickSort(list1,0,n - 1)
+# print('Sorted List:')
+# print(list1)
+
+
+
+# # Quicksort 2:
+# def quicksort(mylist,low,high):
+# 	if high - low > 1:
+# 		p = partition(mylist,low,high)
+# 		print(mylist)
+# 		quicksort(mylist, low, p)
+# 		quicksort(mylist,p + 1,high)
+# def partition(mylist,low,high):
+# 	pivot = mylist[low]
+# 	i = low + 1
+# 	j = high - 1
+# 	while True:
+# 		while ( i <= j and mylist[j] >= pivot):
+# 			j = j - 1
+# 		while ( i <= j and mylist[i] <= pivot):
+# 			i = i + 1
+# 		if i <= j:
+# 			mylist[i],mylist[j] = mylist[j],mylist[i]
+# 		else:
+# 			mylist[low],mylist[j] = mylist[j],mylist[low]
+# 			return j
