@@ -278,8 +278,12 @@ Dynamic Programming
 # 		else:
 # 			mylist[low],mylist[j] = mylist[j],mylist[low]
 # 			return j
-
-
+# 
+# 
+# mylist = [8, 3, 1, 7, 0, 10, 2, 5]
+# print("Original list:", mylist)
+# quicksort(mylist, 0, len(mylist))
+# print("Sorted list:", mylist)
 
 
 '''
