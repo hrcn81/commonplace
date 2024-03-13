@@ -278,8 +278,8 @@ Dynamic Programming
 # 		else:
 # 			mylist[low],mylist[j] = mylist[j],mylist[low]
 # 			return j
-# 
-# 
+#
+#
 # mylist = [8, 3, 1, 7, 0, 10, 2, 5]
 # print("Original list:", mylist)
 # quicksort(mylist, 0, len(mylist))
@@ -352,5 +352,39 @@ cgpa	package
 # 		break
 # 	result = predictor(x)
 # 	print('Result: ',result)
+
+
+
+
+
+# # Quicksort 2:
+# def quicksort(mylist,low,high):
+# 	if high - low > 1:
+# 		p = partition(mylist,low,high)
+# 		print(mylist)
+# 		quicksort(mylist, low, p)
+# 		quicksort(mylist,p + 1,high)
+# def partition(mylist,low,high):
+# 	pivot = mylist[low]
+# 	i = low + 1
+# 	j = high - 1
+# 	while True:
+# 		while ( i <= j and mylist[j] >= pivot):
+# 			j = j - 1
+# 		while ( i <= j and mylist[i] <= pivot):
+# 			i = i + 1
+# 		if i <= j:
+# 			mylist[i],mylist[j] = mylist[j],mylist[i]
+# 		else:
+# 			mylist[low],mylist[j] = mylist[j],mylist[low]
+# 			return j
+#
+#
+# mylist = [20,15,13,18,12]
+# print("Original list:", mylist)
+# quicksort(mylist, 0, len(mylist))
+# print("Sorted list:", mylist)
+
+
 
 
