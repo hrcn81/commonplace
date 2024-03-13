@@ -278,3 +278,74 @@ Dynamic Programming
 # 		else:
 # 			mylist[low],mylist[j] = mylist[j],mylist[low]
 # 			return j
+
+
+
+
+'''
+cgpa	package
+6.89	3.26
+5.12	1.98
+7.82	3.25
+7.42	3.67
+6.94	3.57
+'''
+
+# def xdot(num):
+# 	return print(round(8.402 - num,2))
+#
+# while True:
+# 	n1 = eval( input( 'Enter Number:' ) )
+# 	if n1 == 0:
+# 		print('Exiting From Loop')
+# 		break
+# 	result = xdot( n1 )
+# 	print(f"Result: {result}")
+
+
+
+# def ydot(num):
+# 	return round(3.146 - num,2)
+#
+# while True:
+# 	n1 = eval(input('Enter Number:'))
+# 	if n1 == 0:
+# 		break
+# 	result = ydot(n1)
+# 	print('Result:',result)
+
+
+
+# def nsquare(num):
+# 	return round(num**2,2)
+# while True:
+# 	n1 = eval(input("Enter Number: "))
+# 	if n1 == 0:
+# 		break
+# 	rslt = nsquare(n1)
+# 	print(rslt)
+
+
+
+# def multipication(n1,n2):
+# 	return round(n1*n2,2)
+# while True:
+# 	n1 = eval( input( 'Enter Number_1: ' ) )
+# 	n2 = eval( input( 'Enter Number_2: ' ) )
+# 	if n1 == 0 and n2 == 0:
+# 		break
+# 	result = multipication(n1,n2)
+# 	print('Result:',result)
+
+
+
+
+# def predictor(x):
+# 	return round(0.15*x + 1.8857,2)
+# while True:
+# 	x = eval(input('Enter Number: '))
+# 	if x == 0:
+# 		break
+# 	result = predictor(x)
+# 	print('Result: ',result)
+
