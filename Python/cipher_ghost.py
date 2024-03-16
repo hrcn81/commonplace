@@ -385,4 +385,3 @@ cgpa	package
 # quicksort(mylist, 0, len(mylist))
 # print("Sorted list:", mylist)
 
-
