@@ -390,10 +390,98 @@ cgpa	package
 
 # def func(a = 1,b = 2,c = 3):
 # 	return a*b*c
-# 
+#
 # result = func(5,c = 4)
 # print(result)
 
+
+
+
+
+# class person:
+#
+# 	def __init__( self,name,age ):
+# 		print('__init__')
+# 		# print(name)
+# 		# print(age)
+# 		self.name = name
+# 		self.age = age
+#
+# 	def run( self ):
+# 		print(self.name)
+# 		print('run !!')
+#
+# # p1 = person()
+# # p1.run()
+# # print(p1.__init__())
+#
+# # p2 = person('Mayank',24)
+#
+# p3 = person('Melech',24)
+# p3.run()
+
+
+
+
+
+# class agent:
+# 	def __init__( self,name,age):
+# 		print('Welcome to the GAME')
+# 		self.name = name
+# 		self.age = age
+# 		self.health = 100
+# 		self.alive = True
+#
+# 	def curr_health( self ):
+# 		if self.health >= 0.1:
+# 			print(f"\nCurrent health of {self.name} is {self.health}.")
+# 		else:
+# 			print('Player is dead')
+#
+# 	def punched( self ):
+# 		self.health -= 10
+#
+# 	def shooted( self ):
+# 		self.health -= 50
+#
+# 	def is_live( self ):
+# 		if self.health <= 0:
+# 			self.alive = False
+#
+# 	def info( self ):
+# 		print(f"Name	: 	{self.name}")
+# 		print(f"Age		:  	{self.age}")
+# 		print(f"Health	: 	{self.health}")
+# 		print(f"Alive 	:	{self.alive}")
+#
+#
+# a1 = agent('Mayank',24)
+# # a2 = agent('James',30)
+# # a3 = agent('Martin',28)
+#
+# a1.info()
+# a1.curr_health()
+# a1.punched()
+# a1.curr_health()
+# a1.shooted()
+# a1.curr_health()
+# a1.shooted()
+# a1.curr_health()
+# a1.is_live()
+# a1.info()
+#
+# print('\n','-=-'*30,'\n')
+#
+#
+# class boss(agent):
+# 	def __init__( self,name,age ):
+# 		super().__init__(name,age)
+# 		self.health = 1000
+# 	def blow_fire( self ):
+# 		print('blow fire!')
+#
+# b1 = boss('Miral',25)
+# b1.info()
 
 
 
