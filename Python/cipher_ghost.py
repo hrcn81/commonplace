@@ -483,5 +483,3 @@ cgpa	package
 # b1 = boss('Miral',25)
 # b1.info()
 
-
-
