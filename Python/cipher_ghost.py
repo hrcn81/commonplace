@@ -397,7 +397,6 @@ cgpa	package
 
 
 
-
 # class person:
 #
 # 	def __init__( self,name,age ):
@@ -482,4 +481,66 @@ cgpa	package
 #
 # b1 = boss('Miral',25)
 # b1.info()
+
+
+
+
+
+
+# # Preorder
+
+class Node:
+	def __init__( self,key ):
+		self.left = None
+		self.right = None
+		self.val = key
+	def preOrder( self ):			# NLR
+		print(self.val,end = ' ')
+		if self.left:
+			self.left.preOrder()
+		if self.right:
+			self.right.preOrder()
+	def postOrder( self ):			# LRN
+		if self.left:
+			self.left.postOrder()
+		if self.right:
+			self.right.postOrder()
+		print(self.val,end = ' ')
+	def inOrder( self ):			# LNR
+		if self.left:
+			self.left.inOrder()
+		print(self.val,end = ' ')
+		if self.right:
+			self.right.inOrder()
+
+
+# post - LRN
+r1 = Node(50)
+r1.left = Node(51)
+r1.left.left = Node(44)
+r1.left.left.left = Node(40)
+r1.left.left.right = Node(41)
+r1.left.left.left.left = Node(36)
+r1.left.right = Node(30)
+r1.left.right.left = Node(34)
+r1.left.right.left.right = Node(42)
+r1.left.right.right = Node(31)
+r1.left.right.right.right = Node(51)
+r1.left.right.right.right.left = Node(33)
+r1.left.right.right.right.right = Node(1)
+
+r1.right = Node(2)
+r1.right.right = Node(3)
+r1.right.right.left = Node(8)
+r1.right.right.right = Node(5)
+r1.right.right.right.left = Node(7)
+r1.right.right.right.left.right = Node(12)
+
+r1.postOrder()
+
+
+
+
+
+
 
