@@ -666,6 +666,3 @@ Step 9: Observing the time of the Transaction.
 
 Link of the Python Notebook : Click here
 '''
-
-
-
