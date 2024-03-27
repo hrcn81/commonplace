@@ -669,3 +669,193 @@ Link of the Python Notebook : Click here
 
 
 
+# # Binary Search Tree = BST
+# class TreeNode:
+#     def __init__(self, key):
+#         self.key = key
+#         self.left = None
+#         self.right = None
+#
+# class BinarySearchTree:
+#     def __init__(self):
+#         self.root = None
+#
+#     def insert(self, key):
+#         self.root = self._insert(self.root, key)
+#
+#     def _insert(self, root, key):
+#         if root is None:
+#             return TreeNode(key)
+#         if key < root.key:
+#             root.left = self._insert(root.left, key)
+#         elif key > root.key:
+#             root.right = self._insert(root.right, key)
+#         return root
+#
+#     def delete(self, key):
+#         self.root = self._delete(self.root, key)
+#
+#     def _delete(self, root, key):
+#         if root is None:
+#             return root
+#         if key < root.key:
+#             root.left = self._delete(root.left, key)
+#         elif key > root.key:
+#             root.right = self._delete(root.right, key)
+#         else:
+#             if root.left is None:
+#                 return root.right
+#             elif root.right is None:
+#                 return root.left
+#             temp = self._min_value_node(root.right)
+#             root.key = temp.key
+#             root.right = self._delete(root.right, temp.key)
+#         return root
+#
+#     def _min_value_node(self, node):
+#         current = node
+#         while current.left is not None:
+#             current = current.left
+#         return current
+#
+#     def search(self, key):
+#         return self._search(self.root, key)
+#
+#     def _search(self, root, key):
+#         if root is None or root.key == key:
+#             return root
+#         if key < root.key:
+#             return self._search(root.left, key)
+#         return self._search(root.right, key)
+#
+#     def inorder_traversal(self):
+#         self._inorder_traversal(self.root)
+#
+#     def _inorder_traversal(self, root):
+#         if root:
+#             self._inorder_traversal(root.left)
+#             print(root.key, end=" ")
+#             self._inorder_traversal(root.right)
+#
+#
+# # Example usage:
+# bst = BinarySearchTree()
+# bst.insert(50)
+# bst.insert(30)
+# bst.insert(20)
+# bst.insert(40)
+# bst.insert(70)
+# bst.insert(60)
+# bst.insert(80)
+#
+# print("Inorder Traversal:")
+# bst.inorder_traversal()
+# print("\n")
+#
+# print("Search for 40:", bst.search(40))
+# print("Search for 100:", bst.search(100))
+#
+# bst.delete(30)
+# print("\nAfter deleting 30:")
+# bst.inorder_traversal()
+
+
+# from collections import deque
+# 
+# 
+# class TreeNode:
+# 	def __init__ ( self, key ):
+# 		self.key = key
+# 		self.left = None
+# 		self.right = None
+# 
+# 
+# class BinarySearchTree:
+# 	def __init__ ( self ):
+# 		self.root = None
+# 
+# 	def insert ( self, key ):
+# 		self.root = self._insert( self.root, key )
+# 
+# 	def _insert ( self, root, key ):
+# 		if root is None:
+# 			return TreeNode( key )
+# 		if key < root.key:
+# 			root.left = self._insert( root.left, key )
+# 		elif key > root.key:
+# 			root.right = self._insert( root.right, key )
+# 		return root
+# 
+# 	def delete ( self, key ):
+# 		self.root = self._delete( self.root, key )
+# 
+# 	def _delete ( self, root, key ):
+# 		if root is None:
+# 			return root
+# 		if key < root.key:
+# 			root.left = self._delete( root.left, key )
+# 		elif key > root.key:
+# 			root.right = self._delete( root.right, key )
+# 		else:
+# 			if root.left is None:
+# 				return root.right
+# 			elif root.right is None:
+# 				return root.left
+# 			temp = self._min_value_node( root.right )
+# 			root.key = temp.key
+# 			root.right = self._delete( root.right, temp.key )
+# 		return root
+# 
+# 	def _min_value_node ( self, node ):
+# 		current = node
+# 		while current.left is not None:
+# 			current = current.left
+# 		return current
+# 
+# 	def search ( self, key ):
+# 		return self._search( self.root, key )
+# 
+# 	def _search ( self, root, key ):
+# 		if root is None or root.key == key:
+# 			return root
+# 		if key < root.key:
+# 			return self._search( root.left, key )
+# 		return self._search( root.right, key )
+# 
+# 	def level_order_traversal ( self ):
+# 		if self.root is None:
+# 			return
+# 
+# 		queue = deque()
+# 		queue.append( self.root )
+# 
+# 		while queue:
+# 			level_size = len( queue )
+# 			for _ in range( level_size ):
+# 				node = queue.popleft()
+# 				print( node.key, end = " " )
+# 
+# 				if node.left:
+# 					queue.append( node.left )
+# 				if node.right:
+# 					queue.append( node.right )
+# 
+# 			print()
+# 
+# 
+# # Example usage:
+# bst = BinarySearchTree()
+# bst.insert( 50 )
+# bst.insert( 30 )
+# bst.insert( 20 )
+# bst.insert( 40 )
+# bst.insert( 70 )
+# bst.insert( 60 )
+# bst.insert( 80 )
+# 
+# print( "Level Order Traversal:" )
+# bst.level_order_traversal()
+# 
+# print( "\nAfter deleting 30:" )
+# bst.delete( 30 )
+# bst.level_order_traversal()
