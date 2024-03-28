@@ -761,22 +761,22 @@ Link of the Python Notebook : Click here
 
 
 # from collections import deque
-# 
-# 
+#
+#
 # class TreeNode:
 # 	def __init__ ( self, key ):
 # 		self.key = key
 # 		self.left = None
 # 		self.right = None
-# 
-# 
+#
+#
 # class BinarySearchTree:
 # 	def __init__ ( self ):
 # 		self.root = None
-# 
+#
 # 	def insert ( self, key ):
 # 		self.root = self._insert( self.root, key )
-# 
+#
 # 	def _insert ( self, root, key ):
 # 		if root is None:
 # 			return TreeNode( key )
@@ -785,10 +785,10 @@ Link of the Python Notebook : Click here
 # 		elif key > root.key:
 # 			root.right = self._insert( root.right, key )
 # 		return root
-# 
+#
 # 	def delete ( self, key ):
 # 		self.root = self._delete( self.root, key )
-# 
+#
 # 	def _delete ( self, root, key ):
 # 		if root is None:
 # 			return root
@@ -805,44 +805,44 @@ Link of the Python Notebook : Click here
 # 			root.key = temp.key
 # 			root.right = self._delete( root.right, temp.key )
 # 		return root
-# 
+#
 # 	def _min_value_node ( self, node ):
 # 		current = node
 # 		while current.left is not None:
 # 			current = current.left
 # 		return current
-# 
+#
 # 	def search ( self, key ):
 # 		return self._search( self.root, key )
-# 
+#
 # 	def _search ( self, root, key ):
 # 		if root is None or root.key == key:
 # 			return root
 # 		if key < root.key:
 # 			return self._search( root.left, key )
 # 		return self._search( root.right, key )
-# 
+#
 # 	def level_order_traversal ( self ):
 # 		if self.root is None:
 # 			return
-# 
+#
 # 		queue = deque()
 # 		queue.append( self.root )
-# 
+#
 # 		while queue:
 # 			level_size = len( queue )
 # 			for _ in range( level_size ):
 # 				node = queue.popleft()
 # 				print( node.key, end = " " )
-# 
+#
 # 				if node.left:
 # 					queue.append( node.left )
 # 				if node.right:
 # 					queue.append( node.right )
-# 
+#
 # 			print()
-# 
-# 
+#
+#
 # # Example usage:
 # bst = BinarySearchTree()
 # bst.insert( 50 )
@@ -852,10 +852,32 @@ Link of the Python Notebook : Click here
 # bst.insert( 70 )
 # bst.insert( 60 )
 # bst.insert( 80 )
-# 
+#
 # print( "Level Order Traversal:" )
 # bst.level_order_traversal()
-# 
+#
 # print( "\nAfter deleting 30:" )
 # bst.delete( 30 )
 # bst.level_order_traversal()
+
+
+
+
+# def diff(s,x):
+# 	if len(s) < len(x):
+# 		return 'False'
+# 	for i in range(len(s) - len(x) + 1):
+# 		print(len(s),(len(x) + 1))
+# 		if s[i:i + len(x)] == x:
+# 			print(i,i+len(x))
+# 			print(s[i:i + len(x)])
+# 			print( x )
+# 			return i
+# 	return -1
+# 
+# # Example usage:
+# s = "GeeksForGeeks"
+# x = "For"
+# print(diff(s, x))
+
+
