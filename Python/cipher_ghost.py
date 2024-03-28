@@ -880,3 +880,23 @@ Link of the Python Notebook : Click here
 # x = "For"
 # print(diff(s, x))
 
+
+
+
+
+# # # Basic Network Theory:
+# # Components:
+# class basic_network_theory:
+# 	def components( self ):
+# 		print('Charge 	: q(t) Unit Columb')
+# 		print('Current : I(t) = dq(t)/dt Unit Ampere')
+# 		print('Voltage : V(t) = dw/dq Unit Voltage')
+# 		print('Power 	: P(t) = I(t)*V(t) or dw(t)/dt Unit Watt')
+#
+# bnt = basic_network_theory()
+# bnt.components()
+
+
+
+
+
