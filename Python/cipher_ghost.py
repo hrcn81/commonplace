@@ -927,7 +927,7 @@ Link of the Python Notebook : Click here
 # 		self.value = value
 # 		self.left = None
 # 		self.right = None
-# 
+#
 # class BinarySearchTree:
 # 	def __init__ ( self ):
 # 		self.root = None
@@ -946,19 +946,19 @@ Link of the Python Notebook : Click here
 # 			self.inorder( node.left )
 # 			print( node.value )
 # 			self.inorder( node.right )
-# 
+#
 # 	def preorder ( self, node ):
 # 		if node is not None:
 # 			print( node.value )
 # 			self.preorder ( node.left )
 # 			self.preorder ( node.right )
-# 
+#
 # 	def postorder ( self, node ):
 # 		if node is not None:
 # 			self.postorder ( node.left )
 # 			self.postorder ( node.right )
 # 			print( node.value )
-# 
+#
 # 	def print_tree ( self, traversal_type = 'preorder' ):
 # 		if traversal_type == 'preorder':
 # 			self.preorder ( self.root )
@@ -968,22 +968,21 @@ Link of the Python Notebook : Click here
 # 			self.postorder ( self.root )
 # 		else:
 # 			print( "Invalid traversal type" )
-# 
+#
 # bst = BinarySearchTree()
 # l1 = [7,3,5,8,9,2,10,1,11]
 # for i in l1:
 # 	bst.insert(i)
 # print(bst.root.value)
 # bst.print_tree()
-# 
+#
 # print("\nPreorder traversal:")
 # bst.print_tree('preorder')
-# 
+#
 # print("\nInorder traversal:")
 # bst.print_tree('inorder')
-# 
+#
 # print("\nPostorder traversal:")
 # bst.print_tree('postorder')
-
 
 
