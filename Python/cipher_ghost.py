@@ -896,7 +896,94 @@ Link of the Python Notebook : Click here
 # bnt = basic_network_theory()
 # bnt.components()
 
+# # Binary Search Tree = BST
+# class TreeNode:
+#     def __init__(self, key):
+#         self.key = key
+#         self.left = None
+#         self.right = None
+#
+# class BinarySearchTree:
+#     def __init__(self):
+#         self.root = None
+#
+#     def insert(self, key):
+#         self.root = self._insert(self.root, key)
+#
+#     def _insert(self, root, key):
+#         if root is None:
+#             return TreeNode(key)
+#         if key < root.key:
+#             root.left = self._insert(root.left, key)
+#         elif key > root.key:
+#             root.right = self._insert(root.right, key)
+#         return root
 
+
+
+# # BST :
+# class Node:
+# 	def __init__ ( self, value ):
+# 		self.value = value
+# 		self.left = None
+# 		self.right = None
+# 
+# class BinarySearchTree:
+# 	def __init__ ( self ):
+# 		self.root = None
+# 	def insert ( self, value ):
+# 		self.root = self.insert_after( self.root, value )
+# 	def insert_after ( self, root, value ):
+# 		if root is None:
+# 			return Node( value )
+# 		if value < root.value:
+# 			root.left = self.insert_after( root.left, value )
+# 		elif value > root.value:
+# 			root.right = self.insert_after( root.right, value )
+# 		return root
+# 	def inorder ( self, node ):
+# 		if node is not None:
+# 			self.inorder( node.left )
+# 			print( node.value )
+# 			self.inorder( node.right )
+# 
+# 	def preorder ( self, node ):
+# 		if node is not None:
+# 			print( node.value )
+# 			self.preorder ( node.left )
+# 			self.preorder ( node.right )
+# 
+# 	def postorder ( self, node ):
+# 		if node is not None:
+# 			self.postorder ( node.left )
+# 			self.postorder ( node.right )
+# 			print( node.value )
+# 
+# 	def print_tree ( self, traversal_type = 'preorder' ):
+# 		if traversal_type == 'preorder':
+# 			self.preorder ( self.root )
+# 		if traversal_type == 'inorder':
+# 			self.inorder ( self.root )
+# 		if traversal_type == 'postorder':
+# 			self.postorder ( self.root )
+# 		else:
+# 			print( "Invalid traversal type" )
+# 
+# bst = BinarySearchTree()
+# l1 = [7,3,5,8,9,2,10,1,11]
+# for i in l1:
+# 	bst.insert(i)
+# print(bst.root.value)
+# bst.print_tree()
+# 
+# print("\nPreorder traversal:")
+# bst.print_tree('preorder')
+# 
+# print("\nInorder traversal:")
+# bst.print_tree('inorder')
+# 
+# print("\nPostorder traversal:")
+# bst.print_tree('postorder')
 
 
 
