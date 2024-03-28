@@ -874,7 +874,7 @@ Link of the Python Notebook : Click here
 # 			print( x )
 # 			return i
 # 	return -1
-# 
+#
 # # Example usage:
 # s = "GeeksForGeeks"
 # x = "For"
