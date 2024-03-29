@@ -1001,17 +1001,22 @@ class singlylinkelist:
 		temp = self.head
 		if self.head is None:
 			print('Empty')
-		while temp:
-			# temp = temp.next
-			print(temp.data)
-			temp = temp.next
+		else:
+			temp = self.head
+			while temp:
+				# temp = temp.next
+				print( temp.data , '-=->',end = ' ')
+				temp = temp.next
 
 
 
 l1 = singlylinkelist()
 n = Node(10)
 l1.head = n
-
+n1 = Node(20)
+l1.head.next = n1
+n2 = Node(30)
+n1.next = n2
 l1.display()
 
 
