@@ -1024,7 +1024,14 @@ class singlylinkelist:
 			while temp.next:
 				temp = temp.next
 			temp.next = ne
-
+	def insertatmid( self,data,pos ):
+		nm = Node(data)
+		temp = self.head
+		for i in range(pos - 2):
+			temp = temp.next
+		nm.data = data
+		nm.next = temp.next
+		temp.next = nm
 
 
 l1 = singlylinkelist()
@@ -1039,6 +1046,10 @@ n2.next = n3
 l1.insertatbegining(-10)
 l1.insertatbegining(-20)
 l1.insertatend(88)
+l1.insertatend(99)
+l1.insertatmid('mid1',2)
+l1.insertatmid('mid2',4)
+l1.insertatmid('mid3',5)
 l1.display()
 
 
