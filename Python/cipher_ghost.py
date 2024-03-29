@@ -986,3 +986,33 @@ Link of the Python Notebook : Click here
 # bst.print_tree('postorder')
 
 
+
+
+# # Singaly Linked List:
+class Node:
+	def __init__( self,data ):
+		self.data = data
+		self.next = None
+
+class singlylinkelist:
+	def __init__( self ):
+		self.head = None
+	def display( self ):
+		temp = self.head
+		if self.head is None:
+			print('Empty')
+		while temp:
+			# temp = temp.next
+			print(temp.data)
+			temp = temp.next
+
+
+
+l1 = singlylinkelist()
+n = Node(10)
+l1.head = n
+
+l1.display()
+
+
+
