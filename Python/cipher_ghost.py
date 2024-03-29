@@ -1025,13 +1025,17 @@ class singlylinkelist:
 				temp = temp.next
 			temp.next = ne
 	def insertatmid( self,data,pos ):
-		nm = Node(data)
-		temp = self.head
-		for i in range(pos - 2):
-			temp = temp.next
-		nm.data = data
-		nm.next = temp.next
-		temp.next = nm
+		if pos == 0:
+			self.insertatbegining(data)
+			
+		else:
+			nm = Node( data )
+			temp = self.head
+			for i in range( pos - 1 ):
+				temp = temp.next
+			nm.data = data
+			nm.next = temp.next
+			temp.next = nm
 
 
 l1 = singlylinkelist()
@@ -1050,7 +1054,7 @@ l1.insertatend(99)
 l1.insertatmid('mid1',2)
 l1.insertatmid('mid2',4)
 l1.insertatmid('mid3',5)
+l1.insertatmid('mid0',0)
 l1.display()
-
 
 
