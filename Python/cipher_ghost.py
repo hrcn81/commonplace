@@ -1018,9 +1018,12 @@ class singlylinkelist:
 	def insertatend( self,data ):
 		ne = Node(data)
 		temp = self.head
-		while temp.next:
-			temp = temp.next
-		temp.next = ne
+		if temp is None:
+			self.head = ne
+		else:
+			while temp.next:
+				temp = temp.next
+			temp.next = ne
 
 
 
