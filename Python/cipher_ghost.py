@@ -1005,8 +1005,22 @@ class singlylinkelist:
 			temp = self.head
 			while temp:
 				# temp = temp.next
-				print( temp.data , '-=->',end = ' ')
+				print( temp.data ,end = ' ')
+				if temp.next :
+					print('--->',end = ' ')
+				else:
+					print(' Ended !')
 				temp = temp.next
+	def insertatbegining( self,data ):
+		nb = Node(data)
+		nb.next = self.head
+		self.head = nb
+	def insertatend( self,data ):
+		ne = Node(data)
+		temp = self.head
+		while temp.next:
+			temp = temp.next
+		temp.next = ne
 
 
 
@@ -1017,6 +1031,11 @@ n1 = Node(20)
 l1.head.next = n1
 n2 = Node(30)
 n1.next = n2
+n3 = Node(40)
+n2.next = n3
+l1.insertatbegining(-10)
+l1.insertatbegining(-20)
+l1.insertatend(88)
 l1.display()
 
 
