@@ -1036,6 +1036,20 @@ class singlylinkelist:
 			nm.data = data
 			nm.next = temp.next
 			temp.next = nm
+	def deleteatbegining( self ):
+		temp = self.head
+		self.head = temp.next
+		temp.next = None
+		print('Removed from Begining :',temp.data)
+	def deleteatend( self ):
+		temp = self.head.next
+		prev = self.head
+		while temp.next is not None:
+			temp = temp.next
+			prev = prev.next
+		prev.next = None
+		print('Removed from End :',temp.data)
+
 
 
 l1 = singlylinkelist()
@@ -1056,5 +1070,9 @@ l1.insertatmid('mid2',4)
 l1.insertatmid('mid3',5)
 l1.insertatmid('mid0',0)
 l1.display()
+l1.deleteatbegining()
+l1.deleteatend()
+l1.display()
+
 
 
