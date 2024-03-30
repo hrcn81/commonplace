@@ -988,101 +988,101 @@ Link of the Python Notebook : Click here
 
 
 
-# # Singaly Linked List:
-class Node:
-	def __init__( self,data ):
-		self.data = data
-		self.next = None
-
-class singlylinkelist:
-	def __init__( self ):
-		self.head = None
-	def display( self ):
-		temp = self.head
-		if self.head is None:
-			print('Empty')
-		else:
-			temp = self.head
-			while temp:
-				# temp = temp.next
-				print( temp.data ,end = ' ')
-				if temp.next :
-					print('--->',end = ' ')
-				else:
-					print(' Ended !')
-				temp = temp.next
-	def insertatbegining( self,data ):
-		nb = Node(data)
-		nb.next = self.head
-		self.head = nb
-	def insertatend( self,data ):
-		ne = Node(data)
-		temp = self.head
-		if temp is None:
-			self.head = ne
-		else:
-			while temp.next:
-				temp = temp.next
-			temp.next = ne
-	def insertatmid( self,data,pos ):
-		if pos == 0:
-			self.insertatbegining(data)
-			
-		else:
-			nm = Node( data )
-			temp = self.head
-			for i in range( pos - 1 ):
-				temp = temp.next
-			nm.data = data
-			nm.next = temp.next
-			temp.next = nm
-	def deleteatbegining( self ):
-		temp = self.head
-		self.head = temp.next
-		temp.next = None
-		print('Removed from Begining :',temp.data)
-	def deleteatend( self ):
-		temp = self.head.next
-		prev = self.head
-		while temp.next is not None:
-			temp = temp.next
-			prev = prev.next
-		prev.next = None
-		print('Removed from End :',temp.data)
-	def deleteatmid( self,pos ):
-		temp = self.head.next
-		prev = self.head
-		for i in range(1,pos - 1):
-			temp = temp.next
-			prev = prev.next
-		prev.next = temp.next
-		temp.next = None
-		print('Removed',temp.data, 'from Position:',pos)
-
-
-l1 = singlylinkelist()
-n = Node(10)
-l1.head = n
-n1 = Node(20)
-l1.head.next = n1
-n2 = Node(30)
-n1.next = n2
-n3 = Node(40)
-n2.next = n3
-l1.insertatbegining(-10)
-l1.insertatbegining(-20)
-l1.insertatend(88)
-l1.insertatend(99)
-l1.insertatmid('mid1',2)
-l1.insertatmid('mid2',4)
-l1.insertatmid('mid3',5)
-l1.insertatmid('mid0',0)
-l1.display()
-l1.deleteatbegining()
-l1.display()
-l1.deleteatend()
-l1.display()
-l1.deleteatmid(2)
-l1.display()
+# # # Singaly Linked List:
+# class Node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+#
+# class singlylinkelist:
+# 	def __init__( self ):
+# 		self.head = None
+# 	def display( self ):
+# 		temp = self.head
+# 		if self.head is None:
+# 			print('Empty')
+# 		else:
+# 			temp = self.head
+# 			while temp:
+# 				# temp = temp.next
+# 				print( temp.data ,end = ' ')
+# 				if temp.next :
+# 					print('--->',end = ' ')
+# 				else:
+# 					print(' Ended !')
+# 				temp = temp.next
+# 	def insertatbegining( self,data ):
+# 		nb = Node(data)
+# 		nb.next = self.head
+# 		self.head = nb
+# 	def insertatend( self,data ):
+# 		ne = Node(data)
+# 		temp = self.head
+# 		if temp is None:
+# 			self.head = ne
+# 		else:
+# 			while temp.next:
+# 				temp = temp.next
+# 			temp.next = ne
+# 	def insertatmid( self,data,pos ):
+# 		if pos == 0:
+# 			self.insertatbegining(data)
+#
+# 		else:
+# 			nm = Node( data )
+# 			temp = self.head
+# 			for i in range( pos - 1 ):
+# 				temp = temp.next
+# 			nm.data = data
+# 			nm.next = temp.next
+# 			temp.next = nm
+# 	def deleteatbegining( self ):
+# 		temp = self.head
+# 		self.head = temp.next
+# 		temp.next = None
+# 		print('\nRemoved from Begining :',temp.data)
+# 	def deleteatend( self ):
+# 		temp = self.head.next
+# 		prev = self.head
+# 		while temp.next is not None:
+# 			temp = temp.next
+# 			prev = prev.next
+# 		prev.next = None
+# 		print('\nRemoved from End :',temp.data)
+# 	def deleteatmid( self,pos ):
+# 		temp = self.head.next
+# 		prev = self.head
+# 		for i in range(1,pos - 1):
+# 			temp = temp.next
+# 			prev = prev.next
+# 		prev.next = temp.next
+# 		temp.next = None
+# 		print('\nRemoved',temp.data, 'from Position',pos)
+#
+#
+# l1 = singlylinkelist()
+# n = Node(10)
+# l1.head = n
+# n1 = Node(20)
+# l1.head.next = n1
+# n2 = Node(30)
+# n1.next = n2
+# n3 = Node(40)
+# n2.next = n3
+# l1.insertatbegining(-10)
+# l1.insertatbegining(-20)
+# l1.insertatend(88)
+# l1.insertatend(99)
+# l1.insertatmid('mid1',2)
+# l1.insertatmid('mid2',4)
+# l1.insertatmid('mid3',5)
+# l1.insertatmid('mid0',0)
+# l1.display()
+# l1.deleteatbegining()
+# l1.display()
+# l1.deleteatend()
+# l1.display()
+# l1.deleteatmid(2)
+# l1.display()
 
 
