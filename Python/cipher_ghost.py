@@ -1128,7 +1128,20 @@ The task is to complete the function equilibriumPoint() which takes the array an
 #                 return i + 1
 #             left += lst[i]
 #         return -1
-# 
+#
 # list1 = {1,3,5,2,2}
 # g1 = ghost()
 # print(g1.equilibriumPoint(list1,5))
+
+
+
+# # enumerate()
+# list1 = ["Data-Science", "Power BI", "Python"]
+# for index, subject in enumerate(list1):
+#     print(f"Index: {index + 1}, Subj: {subject}")
+
+# l1 = ['Defender','Range Rover','Discovery','Land Rover']
+# for i,j in enumerate(l1):
+# 	print(f"Rank : {i + 1} , Model : { j }")
+
+
