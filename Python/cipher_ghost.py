@@ -1267,3 +1267,26 @@ The task is to complete the function equilibriumPoint() which takes the array an
 #              }
 #         }
 # print(multidimensional_dict)
+
+
+
+
+# def two_sum_tuples(nums, target):
+#     num_indices = {}  # Dictionary to store indices of elements
+# 
+#     for i, num in enumerate(nums):
+#         complement = target - num
+# 
+#         # Check if the complement is already in the dictionary
+#         if complement in num_indices:
+#             return (complement, num)
+# 
+#         # Add the current element to the dictionary
+#         num_indices[num] = i
+# 
+#     return None
+# 
+# nums = [2, 7, 11, 15]
+# target = 9
+# result = two_sum_tuples(nums, target)
+# print("Tuple of Elements:", result)
