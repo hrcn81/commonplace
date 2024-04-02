@@ -1174,7 +1174,7 @@ The task is to complete the function equilibriumPoint() which takes the array an
 
 
 # from collections import deque
-# 
+#
 # # Creating a Deque
 # people_line = deque(['Alice', 'Bob', 'Charlie'])
 # print(people_line)
@@ -1186,5 +1186,42 @@ The task is to complete the function equilibriumPoint() which takes the array an
 
 
 
+# Student_info = [21, 'Rose', "CSE", 30, 40, 50, 120]
+# print("Student_roll :", Student_info[0], end=' , ')
+# print("Student_name :", Student_info[1], end=', ')
+# print("Student_totalMarks :", Student_info[-1], end=' ')
 
 
+
+# Student_info = [21, "Rose", "CSE", 20, 30, 50, 120]
+# Student_info[2] = "HSC"
+# Student_info[1] = 'Mayank'
+# print(Student_info)
+
+
+
+
+# def count_word_occurrences(sentence):
+#     word_list = sentence.split()
+#     unique_words = []
+#     word_counts = []
+#
+#     for i in word_list:
+#         # Check if the word is already in the unique_words list
+#         if i in unique_words:
+#             index = unique_words.index(i)
+#             word_counts[index] += 1
+#         else:
+#             # Add the word to the unique_words list and initialize its count to 1
+#             unique_words.append(i)
+#             word_counts.append(1)
+#
+#     return unique_words, word_counts
+#
+# # User input
+# user_sentence = input("Enter a sentence: ")
+#
+# unique_words, word_counts = count_word_occurrences(user_sentence)
+# print("Word occurrences in the sentence:")
+# for i, count in zip(unique_words, word_counts):
+#     print(f"{i}: {count}")
