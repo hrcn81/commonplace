@@ -1225,3 +1225,4 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # print("Word occurrences in the sentence:")
 # for i, count in zip(unique_words, word_counts):
 #     print(f"{i}: {count}")
+
