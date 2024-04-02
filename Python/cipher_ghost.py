@@ -1144,4 +1144,3 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # for i,j in enumerate(l1):
 # 	print(f"Rank : {i + 1} , Model : { j }")
 
-
