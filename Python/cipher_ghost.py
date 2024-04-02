@@ -1236,7 +1236,9 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # 
 # # Accessing each element of a 2D-list
 # print( "\n" )
+# print(len(List1))
 # for i in range( len( List1 ) ):
 # 	for j in range( len( List1[ i ] ) ):
 # 		print( List1[ i ][ j ], end = " , " )
+# 		print(i,j)
 
