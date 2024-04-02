@@ -1233,7 +1233,7 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # # Accesing the rows of the list
 # for i in List1:
 # 	print( i, end = ' -- ' )
-# 
+#
 # # Accessing each element of a 2D-list
 # print( "\n" )
 # print(len(List1))
@@ -1242,3 +1242,28 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # 		print( List1[ i ][ j ], end = " , " )
 # 		print(i,j)
 
+
+
+# multidimensional_dict = {
+#         'first_level': {
+#              'second_level_1': {
+#                      'third_level_1': 1,
+#                      'third_level_2': 2
+#                },
+#         'second_level_2': {
+#                     'third_level_3': 3,
+#                     'third_level_4': 4
+#                    }
+#               },
+#  'another_first_level': {
+#                 'second_level_3': {
+#                              'third_level_5': 5,
+#                              'third_level_6': 6
+#                              },
+#               'second_level_4': {
+#                             'third_level_7': 7,
+#                             'third_level_8': 8
+#                     }
+#              }
+#         }
+# print(multidimensional_dict)
