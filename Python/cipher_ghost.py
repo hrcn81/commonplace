@@ -1149,8 +1149,26 @@ The task is to complete the function equilibriumPoint() which takes the array an
 
 # print("Dictionary Iteration")
 # d = dict()
-# 
+#
 # d['key1'] = "val1"
 # d['key2'] = 345
 # for i in d:
 # 	print(i, d[i])
+
+
+
+# def armstrong(val):
+# 	num_str = str(val)
+# 	len_str = len(num_str)
+# 	check = sum(int(i) ** len_str for i in num_str)
+# 	return check == val
+# 
+# n = int(input('Enter number to check whether it\'s armdtrong or not : '))
+# 
+# if armstrong(n):
+#     print(f"{n} is an Armstrong number.")
+# else:
+#     print(f"{n} is not an Armstrong number.")
+
+
+
