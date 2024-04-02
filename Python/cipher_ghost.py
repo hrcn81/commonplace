@@ -1162,13 +1162,29 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # 	len_str = len(num_str)
 # 	check = sum(int(i) ** len_str for i in num_str)
 # 	return check == val
-# 
+#
 # n = int(input('Enter number to check whether it\'s armdtrong or not : '))
-# 
+#
 # if armstrong(n):
 #     print(f"{n} is an Armstrong number.")
 # else:
 #     print(f"{n} is not an Armstrong number.")
+
+
+
+
+# from collections import deque
+# 
+# # Creating a Deque
+# people_line = deque(['Alice', 'Bob', 'Charlie'])
+# print(people_line)
+# # Joining and Leaving
+# people_line.append('David')
+# print(people_line)
+# people_line.pop()
+# print(people_line)
+
+
 
 
 
