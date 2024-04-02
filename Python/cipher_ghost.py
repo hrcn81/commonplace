@@ -1226,3 +1226,17 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # for i, count in zip(unique_words, word_counts):
 #     print(f"{i}: {count}")
 
+
+
+
+# List1 = [ [ 1, 2, 3, 5 ], [ 4, 6, 7, 9 ], [ 8, 10, 11, 13 ] ]
+# # Accesing the rows of the list
+# for i in List1:
+# 	print( i, end = ' -- ' )
+# 
+# # Accessing each element of a 2D-list
+# print( "\n" )
+# for i in range( len( List1 ) ):
+# 	for j in range( len( List1[ i ] ) ):
+# 		print( List1[ i ][ j ], end = " , " )
+
