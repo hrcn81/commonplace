@@ -1145,3 +1145,12 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # 	print(f"Rank : {i + 1} , Model : { j }")
 
 
+
+
+# print("Dictionary Iteration")
+# d = dict()
+# 
+# d['key1'] = "val1"
+# d['key2'] = 345
+# for i in d:
+# 	print(i, d[i])
