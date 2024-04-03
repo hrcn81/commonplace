@@ -1317,3 +1317,4 @@ The task is to complete the function equilibriumPoint() which takes the array an
 # arr = {1,2,3,4,5}
 # s1 = Solution()
 # print(s1.reverseInGroups(arr,N,K))
+
