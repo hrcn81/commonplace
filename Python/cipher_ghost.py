@@ -1273,20 +1273,47 @@ The task is to complete the function equilibriumPoint() which takes the array an
 
 # def two_sum_tuples(nums, target):
 #     num_indices = {}  # Dictionary to store indices of elements
-# 
+#
 #     for i, num in enumerate(nums):
 #         complement = target - num
-# 
+#
 #         # Check if the complement is already in the dictionary
 #         if complement in num_indices:
 #             return (complement, num)
-# 
+#
 #         # Add the current element to the dictionary
 #         num_indices[num] = i
-# 
+#
 #     return None
-# 
+#
 # nums = [2, 7, 11, 15]
 # target = 9
 # result = two_sum_tuples(nums, target)
 # print("Tuple of Elements:", result)
+
+
+
+
+
+
+# class Solution:
+#     # Function to reverse every sub-array group of size k.
+#     def reverseInGroups(self, arr, N, K):
+#         arr_list = list(arr)  # Convert set to a list
+#         for i in range(0, N, K):
+#             left = i
+#             right = min(i + K - 1, N - 1)
+#             while left < right:
+#                 arr_list[left], arr_list[right] = arr_list[right], arr_list[left]
+#                 left += 1
+#                 right -= 1
+#         return arr_list
+# 
+# 
+# 
+# 
+# N = 5
+# K = 3
+# arr = {1,2,3,4,5}
+# s1 = Solution()
+# print(s1.reverseInGroups(arr,N,K))
