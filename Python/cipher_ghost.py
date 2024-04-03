@@ -1308,12 +1308,30 @@ The task is to complete the function equilibriumPoint() which takes the array an
 #                 left += 1
 #                 right -= 1
 #         return arr_list
-# 
-# 
-# 
-# 
+#
+#
+#
+#
 # N = 5
 # K = 3
 # arr = {1,2,3,4,5}
 # s1 = Solution()
 # print(s1.reverseInGroups(arr,N,K))
+
+
+
+
+record = {1001: {'Name': "5 Star"         , "Price" : 10 , "Qn" : 200},
+          1002: {'Name': "Bar-One"        , "Price" : 20 , "Qn" : 100 },
+          1003: {'Name': "Candy"          , "Price" : 2  , "Qn" : 1000},
+          1004: {'Name': "Chocolate Cake" , "Price" : 550, "Qn" : 8 },
+          1005: {'Name': "Blueberry Cake" , "Price" : 650, "Qn" : 5 }}
+
+# print(record[1001]['Name'], record[1001]['Qn'])
+# print(record[1001],record[1005])
+
+
+
+
+
+
