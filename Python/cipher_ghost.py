@@ -1321,18 +1321,47 @@ The task is to complete the function equilibriumPoint() which takes the array an
 
 
 
+# record = {1001: {'Name': "5 Star"         , "Price" : 10 , "Qn" : 200},
+#           1002: {'Name': "Bar-One"        , "Price" : 20 , "Qn" : 100 },
+#           1003: {'Name': "Candy"          , "Price" : 2  , "Qn" : 1000},
+#           1004: {'Name': "Chocolate Cake" , "Price" : 550, "Qn" : 8 },
+#           1005: {'Name': "Blueberry Cake" , "Price" : 650, "Qn" : 5 }}
+# 
+# # print(record[1001]['Name'], record[1001]['Qn'])
+# # print(record[1001],record[1005])
+# # print(record)
+# 
+# # for i in record:
+# # 	print(i)
+# 
+# print('-'*25,'Menu','-'*25)
+# for i in record:
+# 	print(i,':',record[i]['Name'],'|',record[i]['Price'],'|',record[i]['Qn'])
+# print('-'*56)
+# 
+# ui_pr = int(input('Enter Product ID : '))
+# ui_qn = int(input('Enter Quentity : '))
+# 
+# print('-'*25,'Bill','-'*25)
+# 
+# print('Name 			:',record[ui_pr]['Name'])
+# print('Price (Rs.) 	:',record[ui_pr]['Price'])
+# print('Quentity 		:',ui_qn)
+# print('-'*56)
+# 
+# print('Price (Rs.) 	:',ui_qn * record[ui_pr]["Price"],"(Rs.)")
+# 
+# print('-'*56)
+
+
+
+
+
 record = {1001: {'Name': "5 Star"         , "Price" : 10 , "Qn" : 200},
           1002: {'Name': "Bar-One"        , "Price" : 20 , "Qn" : 100 },
           1003: {'Name': "Candy"          , "Price" : 2  , "Qn" : 1000},
           1004: {'Name': "Chocolate Cake" , "Price" : 550, "Qn" : 8 },
           1005: {'Name': "Blueberry Cake" , "Price" : 650, "Qn" : 5 }}
-
-# print(record[1001]['Name'], record[1001]['Qn'])
-# print(record[1001],record[1005])
-# print(record)
-
-# for i in record:
-# 	print(i)
 
 print('-'*25,'Menu','-'*25)
 for i in record:
@@ -1352,7 +1381,4 @@ print('-'*56)
 print('Price (Rs.) 	:',ui_qn * record[ui_pr]["Price"],"(Rs.)")
 
 print('-'*56)
-
-
-
 
