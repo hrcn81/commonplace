@@ -1359,35 +1359,94 @@ The task is to complete the function equilibriumPoint() which takes the array an
 '''
 Updating
 '''
-import json
+# import json
+#
+# record = {1001: {'Name': "5 Star"         , "Price" : 10 , "Qn" : 200},
+#           1002: {'Name': "Bar-One"        , "Price" : 20 , "Qn" : 100 },
+#           1003: {'Name': "Candy"          , "Price" : 2  , "Qn" : 1000},
+#           1004: {'Name': "Chocolate Cake" , "Price" : 550, "Qn" : 8 },
+#           1005: {'Name': "Blueberry Cake" , "Price" : 650, "Qn" : 5 }}
+#
+# print('-'*25,'Menu','-'*25)
+# for i in record:
+# 	print(i,':',record[i]['Name'],'|',record[i]['Price'],'|',record[i]['Qn'])
+# print('-'*56)
+#
+# ui_pr = int(input('Enter Product ID : '))
+# ui_qn = int(input('Enter Quentity : '))
+#
+# print('-'*25,'Bill','-'*25)
+#
+# print('Name 			:',record[ui_pr]['Name'])
+# print('Price (Rs.) 	:',record[ui_pr]['Price'])
+# print('Quentity 		:',ui_qn)
+# print('-'*56)
+#
+# print('Price (Rs.) 	:',ui_qn * record[ui_pr]["Price"],"(Rs.)")
+#
+# print('-'*56)
+# json.dumps(record)
 
-record = {1001: {'Name': "5 Star"         , "Price" : 10 , "Qn" : 200},
-          1002: {'Name': "Bar-One"        , "Price" : 20 , "Qn" : 100 },
-          1003: {'Name': "Candy"          , "Price" : 2  , "Qn" : 1000},
-          1004: {'Name': "Chocolate Cake" , "Price" : 550, "Qn" : 8 },
-          1005: {'Name': "Blueberry Cake" , "Price" : 650, "Qn" : 5 }}
-
-print('-'*25,'Menu','-'*25)
-for i in record:
-	print(i,':',record[i]['Name'],'|',record[i]['Price'],'|',record[i]['Qn'])
-print('-'*56)
-
-ui_pr = int(input('Enter Product ID : '))
-ui_qn = int(input('Enter Quentity : '))
-
-print('-'*25,'Bill','-'*25)
-
-print('Name 			:',record[ui_pr]['Name'])
-print('Price (Rs.) 	:',record[ui_pr]['Price'])
-print('Quentity 		:',ui_qn)
-print('-'*56)
-
-print('Price (Rs.) 	:',ui_qn * record[ui_pr]["Price"],"(Rs.)")
-
-print('-'*56)
-json.dumps(record)
 
 
+
+
+# import nltk
+# # nltk.download( 'stopwords' )
+# from nltk.corpus import stopwords
+# # To check all the English stop words
+# print( stopwords.words( 'english' ) )
+# print('-'*30)
+# x = 0
+# for i in stopwords.words( 'english' ):
+# 	x += 1
+# print(x)
+# print('-'*30)
+# print(sum(1 for i in stopwords.words('english')))
+# print('-'*30)
+#
+#
+# from nltk.tokenize import word_tokenize,sent_tokenize
+# txt="This is not a good time to talk."
+# txt=word_tokenize(txt)
+# for i in txt:
+#     print(i)
+# print('-'*30)
+# stopwords=stopwords.words('english')
+# for word in txt:
+#     if((word.lower() not in stopwords) and (len(word)>=2)):
+#         print(word)
+# print('-'*30)
+#
+# crps = ('In its reply, the government said that a 100% door-to-door enumeration of castes and '
+# 		'communities in the State was carried out in 1983, following the directions issued by '
+# 		'the Supreme Court on October 14, 1982, and that data was being used till now for '
+# 		'providing reservation to the backward classes, most backward classes and denotified communities.')
+# crps = sent_tokenize(crps)
+# stopwords=stopwords.words('english')
+# for i in crps:
+# 	if ((i.lower() not in stopwords) & (len(i) > 2)):
+# 		print(i)
+
+
+# crps_sentences = sent_tokenize(crps)
+# for sentence in crps_sentences:
+#     words = word_tokenize(sentence)
+#     for word in words:
+#         if word.lower() not in stopwords and len(word) > 2:
+#             print(word)
+
+# crps = sent_tokenize(crps)
+# x = 0
+# y = 0
+# for ii in crps:
+# 	words = word_tokenize(ii)
+# 	for i in words:
+# 		if i.lower() not in stopwords and len(i) > 2:
+# 			x += 1
+# 		y += 1
+# print(x,y)
+# print(100 - (27/63) * 100)
 
 
 
