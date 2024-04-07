@@ -1568,3 +1568,43 @@ Updating
 # cm.properties_of_highly_conducting_materials()
 
 
+
+
+'''
+Single Linked List
+'''
+'''
+Displaying
+'''
+# class node:
+# 	def __init__( self,data ):
+# 		self.data = data
+# 		self.next = None
+# 
+# class singlelinkedlist:
+# 	def __init__( self ):
+# 		self.head = None
+# 	def display( self ):
+# 		if self.head is None:
+# 			print('List is empty')
+# 		else:
+# 			temp = self.head
+# 			while temp:
+# 				print(temp.data,end = ' ')
+# 				if temp.next:
+# 					print('--->',end=' ')
+# 				temp = temp.next
+# 
+# sll = singlelinkedlist()
+# n1 = node(10)
+# sll.head = n1
+# n2 = node(20)
+# n1.next = n2
+# n3 = node(30)
+# n2.next = n3
+# sll.display()
+
+
+
+
+
