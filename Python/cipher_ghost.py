@@ -1536,35 +1536,35 @@ record = {1001: {'Name': "5 Star         ", "Price" : 10 , "Qn" : 200},
 
 
 
-class conducting_materials:
-	def types_of_conducting_materials( self ):
-		print("There're 3 types of materials.")
-		print("\t1.Conducting"
-			  "\n\t2.Magnetic"
-			  "\n\t3.Insulating")
-	def conducting_materials( self ):
-		print("\nThere're 2 types of conducting materials.")
-		print("1.Highly conducting materials"
-			  "\n\tCu,Al,Ag,Au ----> Used in windings"
-			  "\n\tCu 	   -> in Windings"
-			  "\n\tAl 	   -> in tanks"
-			  "\n\tCarbon -> in brush")
-		print("2.Highly resistive materials"
-			  "\n\t-> Alloys (mixing of multiple materials)"
-			  "\n\t-> Used in heating elements"
-			  "\n\t-> Low temp. resistive coefficient")
-	def properties_of_highly_conducting_materials( self ):
-		print("\nProperties of Highly Conducting materials:"
-			  "\n\t-> Highest possible conductivity"
-			  "\n\t-> Adequate mechanical strength and absense of brittleness"
-			  "\n\t-> Corrosion resistance"
-			  "\n\t-> Low temp. resistive coefficient"
-			  "\n\t-> Valding and soldering resisrance should be less"
-			  "\n\t-> Rollability and drawability")
-
-cm = conducting_materials()
-cm.types_of_conducting_materials()
-cm.conducting_materials()
-cm.properties_of_highly_conducting_materials()
+# class conducting_materials:
+# 	def types_of_conducting_materials( self ):
+# 		print("There're 3 types of materials.")
+# 		print("\t1.Conducting"
+# 			  "\n\t2.Magnetic"
+# 			  "\n\t3.Insulating")
+# 	def conducting_materials( self ):
+# 		print("\nThere're 2 types of conducting materials.")
+# 		print("1.Highly conducting materials"
+# 			  "\n\tCu,Al,Ag,Au ----> Used in windings"
+# 			  "\n\tCu 	   -> in Windings"
+# 			  "\n\tAl 	   -> in tanks"
+# 			  "\n\tCarbon -> in brush")
+# 		print("2.Highly resistive materials"
+# 			  "\n\t-> Alloys (mixing of multiple materials)"
+# 			  "\n\t-> Used in heating elements"
+# 			  "\n\t-> Low temp. resistive coefficient")
+# 	def properties_of_highly_conducting_materials( self ):
+# 		print("\nProperties of Highly Conducting materials:"
+# 			  "\n\t-> Highest possible conductivity"
+# 			  "\n\t-> Adequate mechanical strength and absense of brittleness"
+# 			  "\n\t-> Corrosion resistance"
+# 			  "\n\t-> Low temp. resistive coefficient"
+# 			  "\n\t-> Valding and soldering resisrance should be less"
+# 			  "\n\t-> Rollability and drawability")
+# 
+# cm = conducting_materials()
+# cm.types_of_conducting_materials()
+# cm.conducting_materials()
+# cm.properties_of_highly_conducting_materials()
 
 
