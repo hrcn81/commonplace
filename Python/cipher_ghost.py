@@ -1455,13 +1455,13 @@ Updating
 '''
 Updating
 '''
-import json
-
-record = {1001: {'Name': "5 Star         ", "Price" : 10 , "Qn" : 200},
-          1002: {'Name': "Bar-One        ", "Price" : 20 , "Qn" : 100 },
-          1003: {'Name': "Candy          ", "Price" : 2  , "Qn" : 1000},
-          1004: {'Name': "Chocolate Cake " ,"Price" : 550, "Qn" : 8 },
-          1005: {'Name': "Blueberry Cake " ,"Price" : 650, "Qn" : 5 }}
+# import json
+#
+# record = {1001: {'Name': "5 Star         ", "Price" : 10 , "Qn" : 200},
+#           1002: {'Name': "Bar-One        ", "Price" : 20 , "Qn" : 100 },
+#           1003: {'Name': "Candy          ", "Price" : 2  , "Qn" : 1000},
+#           1004: {'Name': "Chocolate Cake " ,"Price" : 550, "Qn" : 8 },
+#           1005: {'Name': "Blueberry Cake " ,"Price" : 650, "Qn" : 5 }}
 #
 # print('-'*25,'Menu','-'*25)
 # for i in record:
@@ -1561,11 +1561,10 @@ record = {1001: {'Name': "5 Star         ", "Price" : 10 , "Qn" : 200},
 # 			  "\n\t-> Low temp. resistive coefficient"
 # 			  "\n\t-> Valding and soldering resisrance should be less"
 # 			  "\n\t-> Rollability and drawability")
-# 
+#
 # cm = conducting_materials()
 # cm.types_of_conducting_materials()
 # cm.conducting_materials()
 # cm.properties_of_highly_conducting_materials()
-
 
 
