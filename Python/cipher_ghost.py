@@ -1580,7 +1580,7 @@ Displaying
 # 	def __init__( self,data ):
 # 		self.data = data
 # 		self.next = None
-# 
+#
 # class singlelinkedlist:
 # 	def __init__( self ):
 # 		self.head = None
@@ -1594,7 +1594,7 @@ Displaying
 # 				if temp.next:
 # 					print('--->',end=' ')
 # 				temp = temp.next
-# 
+#
 # sll = singlelinkedlist()
 # n1 = node(10)
 # sll.head = n1
@@ -1603,6 +1603,17 @@ Displaying
 # n3 = node(30)
 # n2.next = n3
 # sll.display()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
