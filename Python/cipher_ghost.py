@@ -1607,54 +1607,93 @@ Displaying
 
 
 
-'''Home Work'''
-'''
-def remove_html_tags(reviews):
-    return re.sub(r'<[^<]+?>','',reviews)
+# Home Work
 
-def remove_url(text):
-    return re.sub(r'http[s]?://\S+|www.\S+','',text)
-
-exclude = string.punctuation
-
-def remove_punctuation(text):
-    for char in exclude:
-        text = text.replace(char,'')
-    return text
-
-def remove_punctuation(text):
-    return text.translate(str.maketrans('','',string.punctuation))
-
-def spelling_correlation(text):
-    return TextBlob(text).correct()
-
-def remove_stopwords(text):
-    return [i for i in text.split() if i not in stop_words]
-
-def remove_emoji(text):
-    emoji_pattern = re.compile("["
-                               u"\U0001F600-\U0001F64F"
-                               # emoticons
-                               u"\U0001F300-\U0001F5FF"
-                               # symbols & pictographs
-                               u"\U0001F680-\U0001F6FF"
-                               # transport & map symbols
-                               u"\U0001F1E0-\U0001F1FF"
-                               # flags (105)
-                               u"\U00002702-\U00002780"
-                               u"\U000024C2-\U0001F251"
-                               "]+", flags=re.UNICODE)
-    return emoji_pattern.sub(r'', text)
-ps = PorterStemmer()
-def stem_words(text):
-    return " ".join([ps.stem(word) for word in word_tokenize(text)])
-sample = 'walk walking walked'
-'''
-
+# def remove_html_tags(reviews):
+#     return re.sub(r'<[^<]+?>','',reviews)
+#
+# def remove_url(text):
+#     return re.sub(r'http[s]?://\S+|www.\S+','',text)
+#
+# exclude = string.punctuation
+#
+# def remove_punctuation(text):
+#     for char in exclude:
+#         text = text.replace(char,'')
+#     return text
+#
+# def remove_punctuation(text):
+#     return text.translate(str.maketrans('','',string.punctuation))
+#
+# def spelling_correlation(text):
+#     return TextBlob(text).correct()
+#
+# def remove_stopwords(text):
+#     return [i for i in text.split() if i not in stop_words]
+#
+# def remove_emoji(text):
+#     emoji_pattern = re.compile("["
+#                                u"\U0001F600-\U0001F64F"
+#                                # emoticons
+#                                u"\U0001F300-\U0001F5FF"
+#                                # symbols & pictographs
+#                                u"\U0001F680-\U0001F6FF"
+#                                # transport & map symbols
+#                                u"\U0001F1E0-\U0001F1FF"
+#                                # flags (105)
+#                                u"\U00002702-\U00002780"
+#                                u"\U000024C2-\U0001F251"
+#                                "]+", flags=re.UNICODE)
+#     return emoji_pattern.sub(r'', text)
+# ps = PorterStemmer()
+# def stem_words(text):
+#     return " ".join([ps.stem(word) for word in word_tokenize(text)])
+# sample = 'walk walking walked'
 
 
 
 
+
+# for i in range(0,2):
+# 	for j in range(0,6):
+# 		print('*',end = ' ')
+# 	print()
+
+
+# x = 0
+# for i in range(5):
+# 	for j in range(5):
+# 		x += 1
+# 		print(x,end = ' ')
+# 	print()
+
+
+
+# for i in range(5):
+# 	for j in range(5):
+# 		print(i,end = ' ')
+# 	print()
+
+
+
+# for i in range(5):
+# 	for j in range(5):
+# 		print(j,end = ' ')
+# 	print()
+
+
+
+# for i in range(5,0,-1):
+# 	for j in range(4,0,-1):
+# 		print(i,end = ' ')
+# 	print()
+
+
+
+# for i in range(5,0,-1):
+# 	for j in range(5,0,-1):
+# 		print(j,end= ' ')
+# 	print()
 
 
 
