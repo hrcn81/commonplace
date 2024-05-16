@@ -1697,7 +1697,56 @@ Displaying
 
 
 
+# x = int(input('Enter Rows Number   : '))
+# y = int(input('Enter Column Number : '))
+# for i in range(x):
+# 	for j in range(y):
+# 		print('*',end = ' ')
+# 	print()
 
+
+
+# for i in range(1,6):
+# 	for j in range(1,4):
+# 		print(i,end= ' ')
+# 	print()
+
+
+
+# for i in range(1,6):
+# 	for j in range(1,4):
+# 		print(j,end= ' ')
+# 	print()
+
+
+
+# x = 1
+# for i in range(6):
+# 	for j in range(6):
+# 		print(x,end = ' ')
+# 		x += 1
+# 	print()
+
+
+
+# for i in range(5):
+# 	for j in range(3):
+# 		print(j+1,i+1,end = ' ')
+# 	print()
+
+
+
+
+# ## Fibonacci Series
+# a = 0
+# b = 1
+# n = int(input('Enter Number : '))
+# print(a,b,end = ' ')
+# for i in range(n-2):
+# 	c = a + b
+# 	a = b
+# 	b = c
+# 	print(c,end = ' ')
 
 
 
