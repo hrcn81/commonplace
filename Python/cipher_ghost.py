@@ -1878,3 +1878,28 @@ Displaying
 # t.extend(x)
 # print(t)
 # print(len(t))
+
+
+
+# t = [0, 1, 2]
+# a = [10,20,30]
+# t.extend([7,a])
+# t.append([11,22])
+# print(t)
+# print(len(t))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
