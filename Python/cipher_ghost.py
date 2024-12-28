@@ -1882,10 +1882,12 @@ Displaying
 
 
 # t = [0, 1, 2]
-# a = [10,20,30]
-# t.extend([7,a])
-# t.append([11,22])
 # print(t)
+# a = [10,20,30]
+# t.extend([])
+# print('extend',t)	# extend [0, 1, 2]
+# t.append([])
+# print('append',t)	# append [0, 1, 2, []]
 # print(len(t))
 
 
