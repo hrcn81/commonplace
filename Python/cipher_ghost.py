@@ -1820,3 +1820,61 @@ Displaying
 
 
 
+# n,count = 5,0
+# for _ in range(n):
+# 	n -= 1
+# 	count += 1
+# print(count)
+
+
+# def swap(a,b):
+# 	return b,a
+#
+# a = int(input('Enter Number a: '))
+# b = int(input('Enter Number b: '))
+# a,b = swap(a,b)
+# print(a - b)
+
+
+
+# x = 0
+# if False or [False] or (False):
+# 	x += 1
+# print(x)
+
+
+
+# s = 'abc'
+# for _ in range(10):
+# 	s = tuple(s)
+# print(s)
+# print(len(s))
+
+
+
+# t = [1, 2, 3, 4]
+# x = t.pop() > t.pop() > t.pop()
+# print(x)
+# print(t)
+# t.append(x)
+# print(t)
+# print(len(t))
+
+
+# x = [1,2,3,20,1]
+# print(x)
+# m = x.pop() < x.pop() > x.pop()
+# print(m)
+# print(x)
+
+
+
+# t = [1, 2, 3, 4,2]
+# print(t)
+# x = (t.pop() < t.pop()), t.pop()
+# print(t)
+# print(x)
+# print(type(x))
+# t.extend(x)
+# print(t)
+# print(len(t))
