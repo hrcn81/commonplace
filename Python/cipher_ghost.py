@@ -4171,8 +4171,9 @@ Displaying
 # num = list(map(int,input('Enter num with space : ').split()))
 # print(num)
 
-# # Opt 3
-
+# # Opt 3	Affirmative
+# num = [int(x) for x in input('Enter numbers with space: ').split()]
+# print(num)
 
 
 
