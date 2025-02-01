@@ -4171,7 +4171,7 @@ Displaying
 # num = list(map(int,input('Enter num with space : ').split()))
 # print(num)
 
-
+# # Opt 3
 
 
 
