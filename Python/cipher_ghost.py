@@ -1974,18 +1974,162 @@ Displaying
 
 # even_numbers_1 = [x for x in range(2,21) if x % 2 == 0]
 # print(even_numbers_1)	# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-
+#
 # even_numbers_2 = list(range(2,21,2))
 # print(even_numbers_2)	# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-
+#
 # even_numbers_3 = []
 # for i in range(2,21):
 # 	if i % 2 == 0:
 # 		even_numbers_3.append(i)	# In snippet there's no mention of print statement
 # print(even_numbers_3)	# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-
+#
 # even_numbers_4 = [2*i for i in range(1,11)]
 # print(even_numbers_4)	# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+
+
+# age_1 = int(input('Enter your age : '))
+# print(age_1)
+# print(type(age_1))
+#
+# age_2 = input('Enter your age : ')
+# age_2o1 = int(age_2)
+# print(age_2o1)
+# print(type(age_2o1))
+
+
+
+# x = float(input('Enter number with decimal : '))
+# print(x)
+# print(type(x))
+# x1 = int(x)
+# print(x1)
+# print(type(x1))
+
+
+
+# x = 10
+# x1 = str(x)
+# print(x)
+# print(type(x))
+# print(x1)
+# print(type(x1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
