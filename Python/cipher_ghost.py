@@ -4181,7 +4181,10 @@ Displaying
 # print(num)
 
 
-
+# print(int("3.14"))		# ValueError
+# print(float("3.14"))		# 3.14
+# print(str(3.14))			# 3.14
+# print(bool(0))				# False
 
 
 
