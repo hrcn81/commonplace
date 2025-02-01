@@ -1893,7 +1893,99 @@ Displaying
 
 
 
+# t = [0, 1, [2], 3]
+# print(t)
+# y = t[2]
+# print(y)	# [2]
+# y.append(20)
+# print(y)	# [2, 20]
+# print(t)	# [0, 1, [2, 20], 3]
+# print(t[2])	# [2, 20]
 
+
+
+# class1 = {"c1":"Mayank","c2":"Miral"}
+#
+# # print(type(class1))
+# print(class1.keys())		# dict_keys(['c1', 'c2'])
+# print(class1.values())		# dict_values(['Mayank', 'Miral'])
+# print(class1.items())		# dict_items([('c1', 'Mayank'), ('c2', 'Miral')])
+# # print(class1['c3'])			# KeyError
+# print(class1.remove('c1'))
+
+
+
+# import random
+# import time
+# Player1_HP = 100
+# Player2_HP = 100
+# turn = 1
+#
+# while (Player1_HP > 0 and Player2_HP > 0):
+#     print("\n-----Turn Start-----")
+#     print('Player 1 HP:',Player1_HP)
+#     print('Player 2 HP:',Player2_HP)
+#
+#     if turn == 1:
+#         # player1 turn
+#         print('Player1 turn')
+#         input('Press Enter to attack')
+#         damage = random.randint(50,100) # Random 10 20 can be the attack damage
+#         print('Generating attack.....💥')
+#         time.sleep(2)
+#         # Player2_HP = Player2_HP - damage
+#         Player2_HP -= damage
+#         print('Player 1 has attacked Player 2 for',damage,'damage ! ⚔️')
+#
+#         turn = 2
+#
+#     else:
+#         # player2 turn
+#         print('Player2 turn')
+#         input('Press Enter to attack')
+#         damage = random.randint(10,20) # Random 10 20 can be the attack damage
+#         print('Generating attack.....💥')
+#         time.sleep(2)
+#         # Player2_HP = Player2_HP - damage
+#         Player1_HP -= damage
+#         print('Player 2 has attacked Player 1 for',damage,'damage ! ⚔️')
+#
+#         turn = 1
+#
+# print()
+# if Player1_HP > 0:
+#     print('Player 1 is winner 🏆')
+# else:
+#     print('Player 2 is winner 🏆')
+
+
+
+# num = int(input('Enter Number:'))
+# if num % 3 == 0 and num % 5 == 0:
+# 	print('FizzBuzz')
+# if num % 3 == 0 and num % 5 != 0:
+# 	print('Fizz')
+# if num % 5 == 0 and num % 3 != 0:
+# 	print('Buzz')
+# if num % 3 != 0 and num % 5 != 0:
+# 	print(num)
+
+
+
+# even_numbers_1 = [x for x in range(2,21) if x % 2 == 0]
+# print(even_numbers_1)	# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+# even_numbers_2 = list(range(2,21,2))
+# print(even_numbers_2)	# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+# even_numbers_3 = []
+# for i in range(2,21):
+# 	if i % 2 == 0:
+# 		even_numbers_3.append(i)	# In snippet there's no mention of print statement
+# print(even_numbers_3)	# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+# even_numbers_4 = [2*i for i in range(1,11)]
+# print(even_numbers_4)	# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 
 
