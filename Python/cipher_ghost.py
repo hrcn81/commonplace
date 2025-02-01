@@ -4172,7 +4172,7 @@ Displaying
 # print(num)
 
 # # Opt 3		Affirmative
-# num = [int(x) for x in input('Enter numbers with space: ').split()]
+# num = [int(x) for x in input('Enter numbers with space : ').split()]
 # print(num)
 
 # # Opt 4		Affirmative
