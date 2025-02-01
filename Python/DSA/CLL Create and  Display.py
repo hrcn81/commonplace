@@ -22,7 +22,6 @@ class CLL:
 
 l = CLL()
 
-
 n1 = Node(10)
 l.head = n1
 l.tail = n1
