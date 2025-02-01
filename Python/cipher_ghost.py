@@ -2019,17 +2019,47 @@ Displaying
 
 
 
+# # Option 1	Dissenting
+# print('Option 1')
+# month = int(input('Enter month number : '))
+# if 3 <= month <= 5:
+# 	print('Spring')
+# if 6 <= month <= 8:
+# 	print('Summer')
+# if 9 <= month <= 11:
+# 	print('Autumn')
+# else:
+# 	print('Winter')
 
 
 
+# # option 2	Affirmative
+# print('\nOption 2')
+# month = int(input('Enter month number : '))
+# if 3 <= month <= 5:
+# 	print('Spring')
+# if 6 <= month <= 8:
+# 	print('Summer')
+# if 9 <= month <= 11:
+# 	print('Autumn')
+# if month in [1,2,12]:
+# 	print('Winter')
 
 
 
+# # Option 3	Dissenting
+# print('\nOption 3')
+# month = int(input('Enter month number : '))
+# season = 'Winter' if month in [12,1,2] else 'Spring' if 3 <= month <= 5 else 'Summer' if 6 <= month <= 8 else 'Autumn'
+# print(season)
 
 
 
-
-
+# # Option 4		Dissenting
+# print('\nOption 4')
+# month = int(input('Enter number of month : '))
+# season = ['Winter','Winter','Spring','Spring','Spring','Summer','Summer','Summer','Summer','Autumn','Autumn','Autumn','Winter'][month - 1]
+# print(season)
 
 
 
