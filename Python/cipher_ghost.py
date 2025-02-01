@@ -4162,9 +4162,14 @@ Displaying
 
 
 
+# # Opt 1		Affirmative
+# num = input('Enter number with space : ').split()
+# num = [int(i) for i in num]
+# print(num)
 
-
-
+# # Opt 2		Affirmative
+# num = list(map(int,input('Enter num with space : ').split()))
+# print(num)
 
 
 
