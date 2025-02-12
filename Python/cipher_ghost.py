@@ -4174,7 +4174,7 @@ Displaying
 # # Opt 3		Affirmative
 # num = [int(x) for x in input('Enter numbers with space : ').split()]
 # print(num)
-
+#
 # # Opt 4		Affirmative
 # num = input('Enter numbers with spaces : ').split()
 # num = list(map(int,num))
@@ -4188,7 +4188,31 @@ Displaying
 
 
 
-
-
-
+# # Leapyear:
+# year = int(input('Enter Year :'))		# 100
+# print('Year :',year)
+# # Op-1								# Leap
+# print('\nOp-1')
+# if year % 4 == 0:
+# 	print('Leap')
+# else:
+# 	print('Not leap')
+#
+# # Op-2								# Not leap
+# print('\nOp-2')
+# if year % 400 == 0:
+# 	print('Leap')
+# elif year % 100 == 0:
+# 	print('Not leap')
+# elif year % 4 == 0:
+# 	print('Leap')
+#
+# # Op-3								# Not leap
+# print('\nOp-3')
+# print('Leap' if year % 4 == 0 and year % 100 != 0 or year % 400 == 0 else 'Not leap')
+#
+# # Op-4								# Not leap
+# print('\nOp-4')
+# is_leap = year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+# print('Leap'if is_leap else 'Not leap')
 
