@@ -4219,4 +4219,7 @@ Displaying
 
 
 
+# print([i for i in {1:'a', 2:'b'}])
 
+# my_tuple = 25
+# print(my_tuple)
