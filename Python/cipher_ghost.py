@@ -4378,3 +4378,15 @@ Displaying
 # f1.seek(0)
 # print(f1.read())
 # f1.close()
+
+
+
+
+# f1 = open("student.txt", "w")
+# f1.write("A\nB\nC\nD")
+# f1.close()
+#
+# f1 = open("student.txt", "r")
+# f1.seek(2)
+# print(f1.read())
+# f1.close()
