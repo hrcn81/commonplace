@@ -4357,3 +4357,12 @@ Displaying
 # f1.close()
 
 
+
+
+f1 = open("student.txt", "w")
+f1.write("Line 1\nLine 2\nLine 3")
+f1.close()
+
+f1 = open("student.txt", "r")
+print(len(f1.readlines()))
+f1.close()
