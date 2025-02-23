@@ -4369,3 +4369,12 @@ Displaying
 
 
 
+# f1 = open("student.txt", "w")
+# f1.write("Python Programming")
+# f1.close()
+#
+# f1 = open("student.txt", "r+")
+# f1.write("Java")
+# f1.seek(0)
+# print(f1.read())
+# f1.close()
