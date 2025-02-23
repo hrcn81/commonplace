@@ -4419,3 +4419,14 @@ Displaying
 #     print("File read successfully")
 # finally:
 #     print("Operation complete")
+
+
+
+
+# f1 = open("student.txt", "w")
+# f1.write("Reg_no\\\\tName\\\\tMark\\\\n1\\\\tAlice\\\\t90\\\\n2\\\\tBob\\\\t85")
+# f1.close()
+#
+# with open("student.txt", "r") as f1:
+#     lines = f1.readlines()
+#     print(lines[0].split("\\\\t")[3])
