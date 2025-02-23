@@ -4430,3 +4430,6 @@ Displaying
 # with open("student.txt", "r") as f1:
 #     lines = f1.readlines()
 #     print(lines[0].split("\\\\t")[3])
+
+
+
