@@ -4223,3 +4223,43 @@ Displaying
 
 # my_tuple = 25
 # print(my_tuple)
+
+
+# print([1,2,3,4][-2:])
+
+
+
+# print(10 != 10)
+
+
+
+# import math
+# print(math.floor(3.7))
+
+
+
+# def multiply(a, b=2):
+#     return a * b
+#
+# print(multiply(3))
+
+
+# def factorial(n):
+#     return 1 if n == 0 else n * factorial(n-1)
+#
+# print(factorial(5))
+
+
+
+# numbers = [1, 2, 3, 4, 5]
+# squared = list(map(lambda x: x**2, numbers))
+# print(squared)
+
+
+
+
+
+# stored_pass =  "secret123"
+# user_input =  "sEcRet123"
+# print(user_input.lower()  == stored_pass)
+
