@@ -4283,3 +4283,77 @@ Displaying
 # print(closure(5))
 
 
+
+# def func(a, b=[]):
+#     b.append(a)
+#     return b
+#
+# print(func(1))
+# print(func(2))
+# print(func(3))
+
+
+
+# def outer(x):
+#     def inner(y):
+#         return x + y
+#     return inner
+#
+# add_five = outer(5)
+# print(add_five(10))
+
+
+
+# def func(x):
+#     return x * 2
+#
+# lst = [1, 2, 3, 4]
+# result = list(map(lambda x: func(x), lst))
+# print(result)
+
+# def func(a, b=[]):
+#     b.append(a)
+#     return b
+#
+# print(func(1))
+# print(func(2))
+# print(func(3))
+
+
+
+# def outer(x):
+#     def inner(y):
+#         return x + y
+#     return inner
+#
+# add_five = outer(5)
+# print(add_five(10))
+
+
+
+# def func(x):
+#     return x * 2
+#
+# lst = [1, 2, 3, 4]
+# result = list(map(lambda x: func(x), lst))
+# print(result)
+
+
+
+# def func(a, b, c):
+#     return a + b + c
+#
+# values = (1, 2, 3)
+# print(func(*values))
+
+
+
+# f1 = open("student.txt", "w")
+# f1.write("Hello, World!")
+# f1.close()
+#
+# f1 = open("student.txt", "r")
+# print(f1.read(5))
+# f1.close()
+
+
