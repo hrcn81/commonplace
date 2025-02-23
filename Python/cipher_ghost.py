@@ -4263,3 +4263,23 @@ Displaying
 # user_input =  "sEcRet123"
 # print(user_input.lower()  == stored_pass)
 
+
+
+
+# def greet(*names):
+#     for name in names:
+#         print(f"Hello, {name}!",end=" ")
+#
+# greet("Alice", "Bob", "Charlie")
+
+
+
+# def outer(x):
+#     def inner(y):
+#         return x + y
+#     return inner
+#
+# closure = outer(10)
+# print(closure(5))
+
+
