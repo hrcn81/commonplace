@@ -4405,3 +4405,17 @@ Displaying
 # f1 = open("student.txt", "r")
 # print(f1.readlines())
 # f1.close()
+
+
+
+
+
+# try:
+#     with open("nonexistent.txt", "r") as f1:
+#         print(f1.read())
+# except FileNotFoundError:
+#     print("File not found")
+# else:
+#     print("File read successfully")
+# finally:
+#     print("Operation complete")
