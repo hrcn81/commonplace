@@ -4390,3 +4390,18 @@ Displaying
 # f1.seek(2)
 # print(f1.read())
 # f1.close()
+
+
+
+
+# f1 = open("student.txt", "w")
+# f1.write("Hello\\\\nWorld")
+# f1.close()
+#
+# f1 = open("student.txt", "a")
+# f1.write("\\\\nPython")
+# f1.close()
+#
+# f1 = open("student.txt", "r")
+# print(f1.readlines())
+# f1.close()
