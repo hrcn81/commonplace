@@ -4450,6 +4450,19 @@ Displaying
 
 
 
+#  Linear Search
+my_list = [1,2,3,45,5,1,216,51,32]
+num = int(input('Enter Number:'))
+found = False
+
+for i in range(0,len(my_list)):
+	if my_list[i] == num:
+		found = True
+
+if found == True:
+	print('Number Found')
+else:
+	print('Number not found')
 
 
 
