@@ -4435,16 +4435,19 @@ Displaying
 
 
 
-# W3L2
+# # W3L2
+#
+# # 1. Open the file
+# f1 = open('student.txt','w')
+#
+# # 2. Write to the file
+# f1.write('Hi! I am learning python')
+#
+# # 3. Close the file
+# f1.close()
 
-# 1. Open the file
-f1 = open('student.txt','w')
 
-# 2. Write to the file
-f1.write('Hi! I am learning python')
 
-# 3. Close the file
-f1.close()
 
 
 
