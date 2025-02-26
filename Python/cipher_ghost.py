@@ -4468,3 +4468,15 @@ Displaying
 
 
 
+# my_list = [-54,5,8,2,1,3,-12,0,125]
+# min_element = my_list[0]
+# # print(min_element)
+#
+# for i in range(0,len(my_list)):
+# 	if min_element > my_list[i]:
+# 		min_element = my_list[i]
+#
+# print(min_element)
+
+
+
