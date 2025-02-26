@@ -4472,7 +4472,7 @@ Displaying
 # min_element = my_list[0]
 # # print(min_element)
 #
-# for i in range(0,len(my_list)):
+# for i in range(1,len(my_list)):
 # 	if min_element > my_list[i]:
 # 		min_element = my_list[i]
 #
