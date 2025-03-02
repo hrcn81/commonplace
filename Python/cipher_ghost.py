@@ -4481,22 +4481,22 @@ Displaying
 
 
 
-my_list = [3,4,6,7,9,12,16,17]
-
-n = len(my_list)
-start = 0
-end = n-1
-target = int(input("Enter Number to find from list:"))
-
-while start <= end:
-	mid = (start + end)//2
-	if my_list[mid] == target:
-		break
-	if my_list[mid] < target:
-		start = mid + 1
-	if my_list[mid] > target:
-		end = mid - 1
-print('Your Element is on index ',mid)
+# my_list = [3,4,6,7,9,12,16,17]
+#
+# n = len(my_list)
+# start = 0
+# end = n-1
+# target = int(input("Enter Number to find from list:"))
+#
+# while start <= end:
+# 	mid = (start + end)//2
+# 	if my_list[mid] == target:
+# 		break
+# 	if my_list[mid] < target:
+# 		start = mid + 1
+# 	if my_list[mid] > target:
+# 		end = mid - 1
+# print('Your Element is on index ',mid)
 
 
 
