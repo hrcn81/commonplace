@@ -4515,13 +4515,15 @@ Displaying
 
 
 
-# a = int (input('Inter Number: '))
-# b = int(input('Enter Number to divide above entered value: '))
-# try:
-# 	c = a/b
-# 	print(c)
-# except:
-# 	print('Can not divide by zero')
+a = int (input('Inter Number: '))
+b = int(input('Enter Number to divide above entered value: '))
+try:
+	c = a/b
+	print(c)
+except:
+	print('Can not divide by zero')
+else:
+	print('Optional...........')
 
 
 
