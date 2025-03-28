@@ -4500,16 +4500,16 @@ Displaying
 
 
 
-# def bubble_sort(arr):
-#     n = len(arr)
-#     for i in range(n):
-#         for j in range(0, n - i - 1):
-#             if arr[j] > arr[j + 1]:  # Swap if the element is greater
-#                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
-#     return arr  # Return the sorted list
-#
-# lst = [8, 9, 4, 5, 6, 7, 1, 2, 5, 4]
-# print("Sorted array:", bubble_sort(lst))
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:  # Swap if the element is greater
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr  # Return the sorted list
+
+lst = [8, 9, 4, 5, 6, 7, 1, 2, 5, 4]
+print("Sorted array:", bubble_sort(lst))
 
 
 
